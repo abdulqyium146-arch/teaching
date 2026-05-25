@@ -187,6 +187,17 @@ export function Footer() {
           <p>
             © {new Date().getFullYear()} Quran Center UK. All rights reserved.
           </p>
+          <p className="text-gray-600">
+            Powered by{' '}
+            <a
+              href="https://smallbusinessmarketingprofessional.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary-400 transition-colors underline underline-offset-2"
+            >
+              Small Business Marketing Professional
+            </a>
+          </p>
           <div className="flex items-center gap-1">
             <span className="text-primary-500 font-arabic text-sm">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</span>
           </div>
