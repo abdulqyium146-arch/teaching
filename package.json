@@ -2,6 +2,9 @@
   "name": "quran-center-uk",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,8 +13,8 @@
   },
   "dependencies": {
     "next": "15.3.2",
-    "react": "^18.3.0",
-    "react-dom": "^18.3.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "framer-motion": "^11.3.0",
     "lucide-react": "^0.400.0",
     "clsx": "^2.1.1",
