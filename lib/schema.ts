@@ -15,7 +15,7 @@ export function generateLocalBusinessSchema() {
     image: `${BUSINESS_INFO.website}/images/og-image.jpg`,
     logo: {
       '@type': 'ImageObject',
-      url: `${BUSINESS_INFO.website}/images/logo.png`,
+      url: `${BUSINESS_INFO.website}/logo.png`,
       width: 200,
       height: 200,
     },
@@ -248,7 +248,7 @@ export function generateArticleSchema(post: {
       name: BUSINESS_INFO.name,
       logo: {
         '@type': 'ImageObject',
-        url: `${BUSINESS_INFO.website}/images/logo.png`,
+        url: `${BUSINESS_INFO.website}/logo.png`,
       },
     },
     datePublished: post.publishedAt,

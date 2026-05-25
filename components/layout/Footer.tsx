@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, BookOpen, ArrowRight } from 'lucide-react'
+import Image from 'next/image'
+import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, ArrowRight } from 'lucide-react'
 import { BUSINESS_INFO, FREE_TRIAL_WHATSAPP } from '@/lib/utils'
 
 const footerLinks = {
@@ -60,13 +61,13 @@ export function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 rounded-xl bg-teal-gradient flex items-center justify-center">
-                <BookOpen className="w-5 h-5 text-white" />
-              </div>
-              <div>
-                <div className="font-heading font-bold text-white">Quran Center UK</div>
-                <div className="text-xs text-primary-400">Premium Islamic Education</div>
-              </div>
+              <Image
+                src="/logo.png"
+                alt="Quran Center UK logo"
+                width={56}
+                height={56}
+                className="h-14 w-auto object-contain"
+              />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
               Providing world-class Quran and Islamic education for all ages since 2014.

@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Phone, Sun, Moon, ChevronDown, BookOpen } from 'lucide-react'
+import { Menu, X, Phone, Sun, Moon, ChevronDown } from 'lucide-react'
+import Image from 'next/image'
 import { useTheme } from 'next-themes'
 import { cn, BUSINESS_INFO, FREE_TRIAL_WHATSAPP } from '@/lib/utils'
 
@@ -71,18 +72,15 @@ export function Navbar() {
       <nav className="container-custom">
         <div className="flex items-center justify-between h-16 lg:h-18">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 rounded-xl bg-teal-gradient flex items-center justify-center shadow-glow group-hover:shadow-glow-gold transition-all">
-              <BookOpen className="w-5 h-5 text-white" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-heading font-bold text-lg text-dark dark:text-white leading-tight">
-                Quran Center
-              </span>
-              <span className="text-xs text-primary-600 dark:text-primary-400 font-medium leading-tight">
-                United Kingdom
-              </span>
-            </div>
+          <Link href="/" className="flex items-center gap-2 group">
+            <Image
+              src="/logo.png"
+              alt="Quran Center UK logo"
+              width={48}
+              height={48}
+              className="h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
