@@ -222,7 +222,7 @@ export default async function BlogPostPage({
                   Book your FREE trial class today and begin your Quran journey.
                 </p>
                 <a
-                  href="https://wa.me/923323253276"
+                  href="https://wa.me/923474825228"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 bg-white text-primary-700 px-4 py-3 rounded-xl font-semibold text-sm hover:bg-gold hover:text-dark transition-all"
