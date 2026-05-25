@@ -1,10 +1,6 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  experimental: {
-    mdxRs: true,
-  },
-  outputFileTracingRoot: 'C:\\Users\\Asif Computers\\Desktop\\tutoring',
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
