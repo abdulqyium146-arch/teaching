@@ -1,7 +1,5 @@
-import type { Config } from 'tailwindcss'
-import tailwindcssAnimate from 'tailwindcss-animate'
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+const config = {
   darkMode: ['class'],
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -25,9 +23,7 @@ const config: Config = {
           900: '#134E4A',
           950: '#042F2E',
         },
-        secondary: {
-          DEFAULT: '#14B8A6',
-        },
+        secondary: { DEFAULT: '#14B8A6' },
         gold: {
           DEFAULT: '#D4AF37',
           light: '#F0D060',
@@ -71,9 +67,7 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       backgroundImage: {
-        'geometric-pattern': "url('/patterns/geometric.svg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'hero-gradient': 'linear-gradient(135deg, #0F172A 0%, #0F766E 50%, #14B8A6 100%)',
         'gold-gradient': 'linear-gradient(135deg, #D4AF37 0%, #F0D060 50%, #D4AF37 100%)',
         'teal-gradient': 'linear-gradient(135deg, #0F766E 0%, #14B8A6 100%)',
@@ -107,7 +101,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [tailwindcssAnimate],
+  plugins: [require('tailwindcss-animate')],
 }
 
-export default config
+module.exports = config
