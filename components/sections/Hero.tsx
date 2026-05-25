@@ -70,16 +70,32 @@ export function Hero() {
             with Expert Teachers
           </motion.h1>
 
-          {/* Arabic subtitle */}
-          <motion.p
+          {/* Hadith quote */}
+          <motion.div
             variants={fadeUp}
             initial="initial"
             animate="animate"
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="font-arabic text-2xl text-gold/80 mb-4"
+            className="relative inline-block max-w-2xl mx-auto mb-8 w-full"
           >
-            تعلم القرآن الكريم مع أفضل المعلمين
-          </motion.p>
+            <div className="relative bg-white/5 backdrop-blur-sm border border-gold/30 rounded-2xl px-6 py-5">
+              {/* decorative left bar */}
+              <span className="absolute left-0 top-4 bottom-4 w-1 bg-gold-gradient rounded-full" />
+              <p
+                className="font-arabic text-2xl md:text-3xl text-gold leading-relaxed mb-3 text-right"
+                lang="ar"
+                dir="rtl"
+              >
+                خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ
+              </p>
+              <p className="text-white/85 text-sm md:text-base italic leading-relaxed mb-1">
+                &ldquo;The best of you are those who learn the Quran and teach it.&rdquo;
+              </p>
+              <p className="text-gold/70 text-xs font-medium tracking-wide">
+                — Prophet Muhammad ﷺ &nbsp;·&nbsp; Sahih al-Bukhari
+              </p>
+            </div>
+          </motion.div>
 
           {/* Description */}
           <motion.p
