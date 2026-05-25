@@ -61,10 +61,17 @@ export function createMetadata({
     },
     robots: noIndex
       ? { index: false, follow: false }
-      : { index: true, follow: true, googleBot: { index: true, follow: true } },
-    verification: {
-      google: 'your-google-verification-code',
-    },
+      : {
+          index: true,
+          follow: true,
+          googleBot: {
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+          },
+        },
     authors: [{ name: BUSINESS_INFO.name, url: BUSINESS_INFO.website }],
     creator: BUSINESS_INFO.name,
     publisher: BUSINESS_INFO.name,

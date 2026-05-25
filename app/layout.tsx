@@ -6,7 +6,7 @@ import { Footer } from '@/components/layout/Footer'
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { ThemeProvider } from '@/components/providers/ThemeProvider'
 import { StickyMobileCTA } from '@/components/sections/StickyMobileCTA'
-import { generateLocalBusinessSchema } from '@/lib/schema'
+import { generateLocalBusinessSchema, generateWebSiteSchema } from '@/lib/schema'
 import { BUSINESS_INFO } from '@/lib/utils'
 
 const inter = Inter({
@@ -86,11 +86,11 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'your-google-site-verification',
-  },
   alternates: {
     canonical: BUSINESS_INFO.website,
+    languages: {
+      'en-GB': BUSINESS_INFO.website,
+    },
   },
 }
 
@@ -99,7 +99,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const jsonLd = generateLocalBusinessSchema()
+  const orgSchema = generateLocalBusinessSchema()
+  const websiteSchema = generateWebSiteSchema()
 
   return (
     <html
@@ -110,12 +111,26 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#0F766E" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.google.com" />
+        <meta name="geo.region" content="GB-MAN" />
+        <meta name="geo.placename" content="Manchester" />
+        <meta name="geo.position" content="53.4555;-2.1901" />
+        <meta name="ICBM" content="53.4555, -2.1901" />
+        <meta name="rating" content="general" />
+        <meta name="revisit-after" content="3 days" />
+        <meta name="language" content="en-GB" />
       </head>
       <body className={`font-body antialiased bg-background`}>
         <ThemeProvider

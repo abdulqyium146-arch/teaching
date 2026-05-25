@@ -89,35 +89,61 @@ export function LocalSEOBlock() {
           ))}
         </div>
 
-        {/* Manchester local SEO paragraph */}
+        {/* SEO content block */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ delay: 0.5 }}
-          className="mt-10 p-6 bg-primary-50 dark:bg-primary-900/20 rounded-2xl border border-primary-100 dark:border-primary-800"
+          className="mt-10 grid md:grid-cols-2 gap-6"
         >
-          <h3 className="font-heading font-semibold text-dark dark:text-white mb-3 text-lg">
-            Quran Classes in Manchester — Your Local Islamic Education Centre
-          </h3>
-          <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-            Based at <strong>41 Hemmons Rd, Levenshulme, Manchester M12 5TA</strong>, Quran Center UK
-            has been serving the Muslim community of Greater Manchester for over 10 years. We provide
-            in-person Quran classes for children and adults in Levenshulme, Gorton, Longsight,
-            Fallowfield, Didsbury, Rusholme and surrounding areas. Our online Quran classes are
-            available to students anywhere in the UK. Whether you&apos;re looking for{' '}
-            <Link href="/quran-classes-manchester" className="text-primary-600 dark:text-primary-400 underline">
-              Quran classes in Manchester
-            </Link>
-            ,{' '}
-            <Link href="/tajweed-classes-uk" className="text-primary-600 dark:text-primary-400 underline">
-              Tajweed classes UK
-            </Link>
-            , or{' '}
-            <Link href="/online-quran-classes" className="text-primary-600 dark:text-primary-400 underline">
-              online Quran classes
-            </Link>
-            , we have the perfect programme for your family.
-          </p>
+          <div className="p-6 bg-primary-50 dark:bg-primary-900/20 rounded-2xl border border-primary-100 dark:border-primary-800">
+            <h3 className="font-heading font-semibold text-dark dark:text-white mb-3 text-lg">
+              Quran Classes in Manchester — Your Local Centre
+            </h3>
+            <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+              Based at <strong>41 Hemmons Rd, Levenshulme, Manchester M12 5TA</strong>, Quran Center UK
+              has served the Muslim community of Greater Manchester since 2014. We offer in-person{' '}
+              <Link href="/quran-classes-manchester" className="text-primary-600 dark:text-primary-400 underline hover:text-primary-700">
+                Quran classes in Manchester
+              </Link>{' '}
+              for children and adults across Levenshulme, Gorton, Longsight, Fallowfield, Didsbury and Rusholme.
+              Our{' '}
+              <Link href="/tajweed-classes-uk" className="text-primary-600 dark:text-primary-400 underline hover:text-primary-700">
+                Tajweed classes
+              </Link>{' '}
+              and{' '}
+              <Link href="/courses#hifz-ul-quran" className="text-primary-600 dark:text-primary-400 underline hover:text-primary-700">
+                Hifz programme
+              </Link>{' '}
+              are taught by certified, Ijazah-holding teachers.
+            </p>
+          </div>
+
+          <div className="p-6 bg-gold/10 dark:bg-gold-dark/10 rounded-2xl border border-gold/20 dark:border-gold-dark/20">
+            <h3 className="font-heading font-semibold text-dark dark:text-white mb-3 text-lg">
+              Online Quran Classes — UK-Wide, 24/7 Enrolment
+            </h3>
+            <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+              Wherever you are in the UK, our{' '}
+              <Link href="/online-quran-classes" className="text-primary-600 dark:text-primary-400 underline hover:text-primary-700">
+                online Quran classes
+              </Link>{' '}
+              bring expert Islamic education to your home. Students in{' '}
+              <Link href="/online-quran-classes-london" className="text-primary-600 dark:text-primary-400 underline hover:text-primary-700">
+                London
+              </Link>
+              ,{' '}
+              <Link href="/quran-classes-birmingham" className="text-primary-600 dark:text-primary-400 underline hover:text-primary-700">
+                Birmingham
+              </Link>
+              , Leeds, Bradford and beyond join live sessions with our qualified teachers.
+              WhatsApp us <strong>24/7</strong> to enrol or book your{' '}
+              <Link href="/contact" className="text-primary-600 dark:text-primary-400 underline hover:text-primary-700">
+                free trial class
+              </Link>
+              .
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>

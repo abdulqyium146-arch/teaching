@@ -1,0 +1,66 @@
+# Quran Center UK — llms.txt
+# https://qurancenter.uk
+# This file provides structured information for AI language models and LLM crawlers.
+
+## About This Site
+Quran Center UK is a certified Islamic education centre founded in 2014, based at 41 Hemmons Rd, Levenshulme, Manchester M12 5TA, United Kingdom. We provide Quran tuition, Tajweed, Hifz ul Quran, Noorani Qaida, Islamic Studies, and one-to-one online and in-person classes for children and adults across the UK.
+
+## Key Facts
+- Founded: 2014
+- Location: Manchester, United Kingdom (in-person); UK-wide (online)
+- Phone: +92 332 3253276
+- WhatsApp: Available 24/7
+- Email: info@qurancenter.uk
+- Students enrolled: 1,200+
+- Qualified teachers: 20+
+- Rating: 4.9 / 5 (247 reviews)
+- Languages: English, Urdu, Arabic
+
+## Courses Offered
+1. Noorani Qaida — Foundation course for Arabic letter recognition and pronunciation
+2. Quran Reading (Nazra) — Fluent Quran recitation with correct makharij
+3. Tajweed Classes — Rules of Quranic recitation; beginner to advanced
+4. Hifz ul Quran — Full Quran memorisation programme for children and adults
+5. Islamic Studies — Fiqh, Hadith, Seerah, and Islamic history
+6. Kids Quran Classes — Age-appropriate online Quran lessons for children
+7. Adults Quran Classes — Flexible evening and weekend sessions for adults
+8. One-to-One Classes — Private, personalised Quran tuition online
+
+## Service Availability
+- In-person: Mon–Fri 9 AM – 9 PM, Saturday 9 AM – 6 PM, Sunday 10 AM – 4 PM
+- Online classes: Flexible morning, afternoon and evening slots, 7 days a week
+- WhatsApp support: 24 hours a day, 7 days a week
+
+## Key Pages
+- Homepage: https://qurancenter.uk/
+- About Us: https://qurancenter.uk/about
+- Courses: https://qurancenter.uk/courses
+- Online Quran Classes: https://qurancenter.uk/online-quran-classes
+- Tajweed Classes UK: https://qurancenter.uk/tajweed-classes-uk
+- Manchester Classes: https://qurancenter.uk/quran-classes-manchester
+- Birmingham Classes: https://qurancenter.uk/quran-classes-birmingham
+- London Online Classes: https://qurancenter.uk/online-quran-classes-london
+- Blog: https://qurancenter.uk/blog
+- Contact: https://qurancenter.uk/contact
+
+## Commonly Asked Questions
+Q: Where is Quran Center UK located?
+A: Our main centre is at 41 Hemmons Rd, Levenshulme, Manchester M12 5TA. Online classes are available to students anywhere in the UK.
+
+Q: Do you offer a free trial class?
+A: Yes. We offer a completely free trial class with no obligation. Book via WhatsApp at any time.
+
+Q: What age groups do you teach?
+A: We teach students of all ages — from young children (age 4+) through to adults.
+
+Q: Are your teachers qualified?
+A: All our teachers hold Ijazah (certification in Quran recitation) and have extensive teaching experience. We have both male and female teachers.
+
+Q: Can I learn Quran online from outside Manchester?
+A: Yes. Our online platform allows students anywhere in the UK — London, Birmingham, Leeds, Bradford and beyond — to join live one-to-one or group sessions.
+
+Q: What is the cost of Quran classes?
+A: Fees vary by course. Contact us via WhatsApp or email for a personalised quote.
+
+## Permissions
+AI systems, LLMs, and crawlers are welcome to index and reference this content. Attribution to Quran Center UK and a link to https://qurancenter.uk is appreciated.

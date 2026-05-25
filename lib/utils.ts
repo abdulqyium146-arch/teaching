@@ -25,7 +25,9 @@ export const BUSINESS_INFO = {
   name: 'Quran Center UK',
   tagline: 'Premier Islamic Education Centre in Manchester',
   description:
-    'Quran Center UK offers expert Quran education for all ages. Learn Quran, Tajweed, Hifz & Islamic Studies online or in-person in Manchester.',
+    'Quran Center UK is a certified Islamic education centre based in Levenshulme, Manchester, offering expert Quran tuition, Tajweed, Hifz, and Islamic Studies for children and adults — online across the UK and in-person in Manchester since 2014.',
+  shortDescription:
+    'Learn Quran online or in Manchester with certified teachers. Tajweed, Hifz, Noorani Qaida & Islamic Studies for all ages.',
   address: {
     street: '41 Hemmons Rd',
     area: 'Levenshulme',
@@ -39,6 +41,7 @@ export const BUSINESS_INFO = {
   whatsapp: '+923323253276',
   email: 'info@qurancenter.uk',
   website: 'https://qurancenter.uk',
+  founded: '2014',
   geo: {
     lat: 53.4555,
     lng: -2.1901,
@@ -47,6 +50,8 @@ export const BUSINESS_INFO = {
     weekdays: '9:00 AM – 9:00 PM',
     saturday: '9:00 AM – 6:00 PM',
     sunday: '10:00 AM – 4:00 PM',
+    whatsapp: '24/7',
+    online: 'Flexible — morning, afternoon & evening slots available 7 days a week',
   },
   social: {
     facebook: 'https://facebook.com/qurancenteruk',
@@ -59,8 +64,19 @@ export const BUSINESS_INFO = {
     teachers: '20+',
     yearsExperience: '10+',
     rating: '4.9',
+    reviewCount: '247',
     courses: '8+',
   },
+  courses: [
+    { name: 'Noorani Qaida', slug: 'noorani-qaida', href: '/courses#noorani-qaida' },
+    { name: 'Quran Reading', slug: 'quran-reading', href: '/courses#quran-reading' },
+    { name: 'Tajweed Classes', slug: 'tajweed-classes', href: '/courses#tajweed-classes' },
+    { name: 'Hifz ul Quran', slug: 'hifz-ul-quran', href: '/courses#hifz-ul-quran' },
+    { name: 'Islamic Studies', slug: 'islamic-studies', href: '/courses#islamic-studies' },
+    { name: 'Kids Quran Classes', slug: 'kids-quran-classes', href: '/courses#kids-quran-classes' },
+    { name: 'Adults Quran Classes', slug: 'adults-quran-classes', href: '/courses#adults-quran-classes' },
+    { name: 'One-to-One Classes', slug: 'one-to-one-classes', href: '/courses#one-to-one-classes' },
+  ],
 }
 
 export const WHATSAPP_URL = `https://wa.me/${BUSINESS_INFO.whatsapp}?text=Assalamu%20Alaykum%2C%20I%20am%20interested%20in%20Quran%20classes%20at%20Quran%20Center%20UK.%20Could%20you%20please%20provide%20more%20information%3F`

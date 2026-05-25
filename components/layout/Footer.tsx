@@ -14,10 +14,12 @@ const footerLinks = {
   quickLinks: [
     { name: 'About Us', href: '/about' },
     { name: 'Online Classes', href: '/online-quran-classes' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Free Trial Class', href: '/contact' },
+    { name: 'Blog & Islamic Articles', href: '/blog' },
+    { name: 'Contact Us', href: '/contact' },
     { name: 'Manchester Classes', href: '/quran-classes-manchester' },
-    { name: 'Tajweed UK', href: '/tajweed-classes-uk' },
+    { name: 'Tajweed Classes UK', href: '/tajweed-classes-uk' },
+    { name: 'London Online Quran', href: '/online-quran-classes-london' },
   ],
   locations: [
     { name: 'Manchester', href: '/quran-classes-manchester' },
@@ -172,6 +174,10 @@ export function Footer() {
               <p className="text-xs text-gray-400">Mon–Fri: {BUSINESS_INFO.hours.weekdays}</p>
               <p className="text-xs text-gray-400">Saturday: {BUSINESS_INFO.hours.saturday}</p>
               <p className="text-xs text-gray-400">Sunday: {BUSINESS_INFO.hours.sunday}</p>
+              <div className="mt-3 flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+                <p className="text-xs text-green-400 font-medium">WhatsApp: 24/7 Support</p>
+              </div>
             </div>
           </div>
         </div>

@@ -240,20 +240,27 @@ export function ContactForm() {
               </div>
             </div>
 
-            <div className="rounded-2xl overflow-hidden border border-gray-100 dark:border-white/10 h-48 bg-gray-100 dark:bg-white/5 flex items-center justify-center">
-              <div className="text-center text-gray-500 dark:text-gray-400 text-sm">
-                <MapPin className="w-8 h-8 mx-auto mb-2 text-primary-500" />
-                <p>41 Hemmons Rd, Levenshulme</p>
-                <p>Manchester M12 5TA</p>
-                <a
-                  href="https://maps.google.com/?q=41+Hemmons+Rd+Levenshulme+Manchester+M12+5TA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary-600 dark:text-primary-400 underline mt-2 inline-block"
-                >
-                  Open in Google Maps
-                </a>
+            <div className="rounded-2xl overflow-hidden border border-gray-100 dark:border-white/10">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38926439.301144265!2d-76.01551160000004!3d53.452708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x29859e5fe0e4daf9%3A0xe094b717e68bc3ee!2sQuran%20Center%20UK!5e0!3m2!1sen!2s!4v1779698451909!5m2!1sen!2s"
+                width="100%"
+                height="280"
+                style={{ border: 0, display: 'block' }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Quran Center UK location — 41 Hemmons Rd, Levenshulme, Manchester M12 5TA"
+              />
+            </div>
+
+            <div className="bg-green-50 dark:bg-green-900/20 rounded-2xl p-4 border border-green-100 dark:border-green-800">
+              <div className="flex items-center gap-2 mb-1">
+                <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                <span className="font-semibold text-green-800 dark:text-green-300 text-sm">WhatsApp — Available 24/7</span>
               </div>
+              <p className="text-green-700 dark:text-green-400 text-xs">
+                Message us any time of day or night. Our teachers and support team respond around the clock for enrolment, course queries, and trial bookings.
+              </p>
             </div>
           </motion.div>
         </div>
