@@ -25,7 +25,10 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'Amazonbot', allow: '/' },
       { userAgent: 'cohere-ai', allow: '/' },
     ],
-    sitemap: 'https://qurancenter.uk/sitemap.xml',
+    sitemap: [
+      'https://qurancenter.uk/sitemap.xml',
+      'https://qurancenter.uk/feed.xml',
+    ],
     host: 'https://qurancenter.uk',
   }
 }

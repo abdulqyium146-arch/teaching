@@ -1,4 +1,5 @@
-name: Build Check
+name: Build & Index
+
 on:
   push:
     branches: [master, main]
@@ -15,3 +16,81 @@ jobs:
           cache: 'npm'
       - run: npm install
       - run: npm run build
+
+  ping-indexnow:
+    runs-on: ubuntu-latest
+    needs: build
+    # Only ping on actual pushes to master — not on PRs
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/main')
+    steps:
+      # Give Vercel ~3 minutes to deploy before pinging
+      - name: Wait for Vercel deployment
+        run: sleep 180
+
+      # Ping Bing sitemap
+      - name: Ping Bing sitemap
+        run: |
+          curl -s "https://www.bing.com/ping?sitemap=https://qurancenter.uk/sitemap.xml" \
+            && echo "Bing sitemap ping OK"
+
+      # Submit all URLs via IndexNow (notifies Bing, Yandex, Naver, Lista, etc.)
+      - name: Submit IndexNow
+        run: |
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d '{
+              "host": "qurancenter.uk",
+              "key": "b8f7a3d2c1e590478673a2d1c5e90471",
+              "keyLocation": "https://qurancenter.uk/b8f7a3d2c1e590478673a2d1c5e90471.txt",
+              "urlList": [
+                "https://qurancenter.uk/",
+                "https://qurancenter.uk/about",
+                "https://qurancenter.uk/courses",
+                "https://qurancenter.uk/contact",
+                "https://qurancenter.uk/blog",
+                "https://qurancenter.uk/online-quran-classes",
+                "https://qurancenter.uk/hifz-classes",
+                "https://qurancenter.uk/quran-classes-for-kids",
+                "https://qurancenter.uk/quran-classes-for-adults",
+                "https://qurancenter.uk/womens-quran-classes",
+                "https://qurancenter.uk/quran-classes-manchester",
+                "https://qurancenter.uk/quran-classes-birmingham",
+                "https://qurancenter.uk/online-quran-classes-london",
+                "https://qurancenter.uk/tajweed-classes-uk",
+                "https://qurancenter.uk/feed.xml"
+              ]
+            }' \
+            && echo "IndexNow submission OK"
+
+      # Also submit directly to Bing IndexNow endpoint
+      - name: Submit to Bing IndexNow
+        run: |
+          curl -s -X POST "https://www.bing.com/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d '{
+              "host": "qurancenter.uk",
+              "key": "b8f7a3d2c1e590478673a2d1c5e90471",
+              "keyLocation": "https://qurancenter.uk/b8f7a3d2c1e590478673a2d1c5e90471.txt",
+              "urlList": [
+                "https://qurancenter.uk/",
+                "https://qurancenter.uk/hifz-classes",
+                "https://qurancenter.uk/quran-classes-for-kids",
+                "https://qurancenter.uk/quran-classes-for-adults",
+                "https://qurancenter.uk/womens-quran-classes"
+              ]
+            }' \
+            && echo "Bing IndexNow OK"
+
+      # Warm the live site (forces CDN cache + signals freshness to crawlers)
+      - name: Warm site cache
+        run: |
+          for url in \
+            "https://qurancenter.uk/" \
+            "https://qurancenter.uk/hifz-classes" \
+            "https://qurancenter.uk/quran-classes-for-kids" \
+            "https://qurancenter.uk/quran-classes-for-adults" \
+            "https://qurancenter.uk/womens-quran-classes" \
+            "https://qurancenter.uk/sitemap.xml" \
+            "https://qurancenter.uk/feed.xml"; do
+            curl -s -o /dev/null -w "%{http_code} $url\n" "$url"
+          done

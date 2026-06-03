@@ -133,6 +133,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
         <meta name="theme-color" content="#0F766E" />
+        <link rel="alternate" type="application/rss+xml" title="Quran Center UK — Islamic Education Blog" href="https://qurancenter.uk/feed.xml" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.google.com" />
