@@ -8,18 +8,23 @@ import { generateBreadcrumbSchema, generateFAQSchema, generateCourseSchema } fro
 import { BUSINESS_INFO, FREE_TRIAL_WHATSAPP } from '@/lib/utils'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Tajweed Classes UK | Online Tajweed Course',
+  title: 'Tajweed Classes UK | Tajweed Course Near Me',
   description:
-    'Learn Tajweed online with certified UK teachers. Comprehensive Tajweed course covering all rules — for beginners to advanced students. Book FREE trial class!',
+    'Learn Tajweed with certified UK teachers — online & in Manchester. Tajweed classes for beginners to advanced. Quran recitation classes covering all rules. Book FREE trial class!',
   keywords: [
     'Tajweed Classes UK',
+    'Tajweed Classes Near Me',
+    'Tajweed Course',
     'Online Tajweed Classes',
     'Learn Tajweed UK',
-    'Tajweed Course Online',
+    'Quran Tajweed Course',
+    'Quran Recitation Classes',
+    'Tajweed Course Near Me',
     'Quran Tajweed UK',
     'Tajweed Teacher UK',
     'Tajweed Classes Manchester',
-    'Online Quran Tajweed',
+    'Tajweed for Kids',
+    'Quran Recitation',
   ],
   path: '/tajweed-classes-uk',
 })

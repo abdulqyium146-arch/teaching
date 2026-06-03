@@ -11,18 +11,29 @@ import { generateBreadcrumbSchema, generateLocalBusinessSchema, generateFAQSchem
 import { BUSINESS_INFO, FREE_TRIAL_WHATSAPP } from '@/lib/utils'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Quran Classes Manchester | Quran Center UK',
+  title: 'Quran Classes Manchester | Quran School Near Me',
   description:
-    'Expert Quran classes in Manchester — in-person at Levenshulme & online. Tajweed, Hifz, Noorani Qaida for all ages. Certified teachers, FREE trial class available.',
+    'Expert in-person & online Quran classes in Manchester. Quran Center UK — rated 4.9/5. Tajweed, Hifz, Noorani Qaida for all ages in Levenshulme, Gorton, Longsight & UK-wide. FREE trial class.',
   keywords: [
     'Quran Classes Manchester',
-    'Quran Academy Manchester',
+    'Quran Classes Near Me',
+    'Manchester Quran',
     'Quran Teacher Manchester',
+    'Quran School Near Me',
+    'Adult Quran Classes Manchester',
+    'Quran Academy Manchester',
     'Quran Classes Levenshulme',
     'Quran Classes Gorton',
+    'Quran Classes Longsight',
+    'Islamic Courses Manchester',
     'Islamic Education Manchester',
     'Hifz Classes Manchester',
     'Tajweed Classes Manchester',
+    'Quran Tutor Near Me',
+    'Quran Teacher Near Me',
+    'Face to Face Quran Classes',
+    'In Person Quran Classes Near Me',
+    'Quran Centre Near Me',
   ],
   path: '/quran-classes-manchester',
 })

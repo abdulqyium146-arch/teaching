@@ -33,13 +33,38 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/contact`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: `${BASE_URL}/blog`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
+    },
+    // High-value keyword pages
+    {
+      url: `${BASE_URL}/hifz-classes`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${BASE_URL}/quran-classes-for-kids`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${BASE_URL}/quran-classes-for-adults`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/womens-quran-classes`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
     // Local SEO pages
     {
@@ -64,7 +89,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/tajweed-classes-uk`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.85,
     },
   ]
 

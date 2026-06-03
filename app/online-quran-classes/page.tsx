@@ -11,18 +11,28 @@ import { generateBreadcrumbSchema, generateFAQSchema } from '@/lib/schema'
 import { BUSINESS_INFO, FREE_TRIAL_WHATSAPP } from '@/lib/utils'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Online Quran Classes UK | Learn Quran Online',
+  title: 'Online Quran Classes UK | Online Quran Center',
   description:
-    'Join the best online Quran classes in the UK. Learn Quran, Tajweed, Hifz & Islamic Studies from certified teachers via Zoom. All ages welcome. Book FREE trial class!',
+    'Best online Quran classes in the UK. Learn Quran, Tajweed, Hifz & Islamic Studies from certified teachers via Zoom — for kids, adults and sisters. Book FREE trial class!',
   keywords: [
     'Online Quran Classes UK',
+    'Online Quran Center',
+    'Online Quran UK',
     'Learn Quran Online',
-    'Quran Classes Online',
+    'Online Quran Classes for Kids UK',
+    'Online Quran Classes for Children',
+    'Online Quran Teacher UK',
+    'Online Quran Classes Near Me',
+    'Online Hifz Course UK',
+    'Online Quran Memorization Classes UK',
+    'UK Quran',
+    'Learn Quran UK',
+    'Quran UK',
     'Online Tajweed Classes',
     'Online Hifz Classes',
-    'Quran Teacher Online UK',
     'Online Islamic Studies UK',
-    'Online Quran Classes Manchester',
+    'Best Online Quran Classes for Kids',
+    'Online Mosque Classes UK',
   ],
   path: '/online-quran-classes',
 })

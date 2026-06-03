@@ -16,17 +16,35 @@ import { generateFAQSchema } from '@/lib/schema'
 import { BUSINESS_INFO } from '@/lib/utils'
 
 export const metadata: Metadata = {
-  title: 'Quran Center UK | Premium Quran Classes Manchester & Online UK',
+  title: 'Quran Center UK | Best Quran Academy Manchester & Online',
   description:
-    'Learn Quran online or in Manchester with certified teachers. Tajweed, Hifz, Noorani Qaida & Islamic Studies for all ages. Book your FREE trial class today!',
+    'Quran Center UK — the best Quran academy in the UK. Learn Quran online or in Manchester with certified teachers. Tajweed, Hifz, Noorani Qaida & Islamic Studies for all ages. Book FREE trial!',
   keywords: [
+    'Quran Center UK',
+    'Quran Centre UK',
+    'Best Quran Academy in UK',
     'Quran Classes Manchester',
+    'Quran Classes Near Me',
     'Online Quran Classes UK',
     'Quran Academy UK',
+    'Quran School UK',
+    'Learn Quran Centre',
     'Quran Teacher Manchester',
+    'Quran Teacher Near Me',
     'Tajweed Classes Online',
     'Hifz Classes Manchester',
+    'Hifz Classes Near Me',
+    'Quran Classes for Kids',
+    'Quran Classes for Adults',
     'Islamic Studies UK',
+    'Online Quran Center',
+    'Quranic Center',
+    'Islamic Learning Center',
+    'Al Quran Center',
+    'Quran Academy Near Me',
+    'Best Quran Classes UK',
+    'Quran School Near Me',
+    'UK Quran Academy',
   ],
   alternates: {
     canonical: BUSINESS_INFO.website,

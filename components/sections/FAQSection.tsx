@@ -36,24 +36,26 @@ export function FAQSection({ faqs, title = 'Frequently Asked Questions' }: FAQSe
         </motion.div>
 
         <div className="space-y-3">
-          {faqs.map((faq, i) => (
+          {faqs.map((faq, i) => {
+            const key = faq.id ?? faq.question
+            return (
             <motion.div
-              key={faq.id}
+              key={key}
               initial={{ opacity: 0, y: 15 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: i * 0.06 }}
               className="border border-gray-100 dark:border-white/10 rounded-2xl overflow-hidden"
             >
               <button
-                onClick={() => setOpenId(openId === faq.id ? null : faq.id)}
+                onClick={() => setOpenId(openId === key ? null : key)}
                 className="w-full flex items-center justify-between p-5 text-left bg-white dark:bg-dark/60 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors"
-                aria-expanded={openId === faq.id}
+                aria-expanded={openId === key}
               >
                 <span className="font-heading font-semibold text-dark dark:text-white pr-4">
                   {faq.question}
                 </span>
                 <div className="shrink-0 w-6 h-6 rounded-full bg-primary-50 dark:bg-primary-900/30 flex items-center justify-center">
-                  {openId === faq.id ? (
+                  {openId === key ? (
                     <Minus className="w-3.5 h-3.5 text-primary-600 dark:text-primary-400" />
                   ) : (
                     <Plus className="w-3.5 h-3.5 text-primary-600 dark:text-primary-400" />
@@ -62,7 +64,7 @@ export function FAQSection({ faqs, title = 'Frequently Asked Questions' }: FAQSe
               </button>
 
               <AnimatePresence>
-                {openId === faq.id && (
+                {openId === key && (
                   <motion.div
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: 'auto', opacity: 1 }}
@@ -77,7 +79,8 @@ export function FAQSection({ faqs, title = 'Frequently Asked Questions' }: FAQSe
                 )}
               </AnimatePresence>
             </motion.div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>
