@@ -107,8 +107,8 @@ export function Navbar() {
                   className={cn(
                     'flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200',
                     pathname === item.href
-                      ? 'text-primary-700 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/30'
-                      : 'text-gray-700 dark:text-gray-300 hover:text-primary-700 dark:hover:text-primary-400 hover:bg-gray-50 dark:hover:bg-gray-800'
+                      ? 'text-primary-700 bg-white dark:text-primary-400 dark:bg-primary-900/30'
+                      : 'text-gray-700 bg-white/90 dark:text-gray-200 dark:bg-gray-800/80 hover:text-primary-700 hover:bg-white dark:hover:text-primary-400 dark:hover:bg-gray-800'
                   )}
                 >
                   {item.name}
