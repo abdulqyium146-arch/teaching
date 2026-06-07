@@ -84,7 +84,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               alt="Quran Center UK logo"
               width={48}
               height={48}

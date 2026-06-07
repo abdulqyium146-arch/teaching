@@ -33,9 +33,9 @@
       "purpose": "any maskable"
     },
     {
-      "src": "/logo.png",
+      "src": "/logo.webp",
       "sizes": "any",
-      "type": "image/png",
+      "type": "image/webp",
       "purpose": "any"
     }
   ]

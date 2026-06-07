@@ -97,13 +97,13 @@ export const metadata: Metadata = {
       { url: '/favicon.ico', sizes: 'any' },
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/logo.png', sizes: 'any', type: 'image/png' },
+      { url: '/logo.webp', sizes: 'any', type: 'image/webp' },
     ],
     apple: [
       { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
     other: [
-      { rel: 'mask-icon', url: '/logo.png', color: '#0F766E' },
+      { rel: 'mask-icon', url: '/logo.webp', color: '#0F766E' },
     ],
   },
   manifest: '/site.webmanifest',

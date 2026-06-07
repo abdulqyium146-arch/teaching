@@ -64,7 +64,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-5">
               <Image
-                src="/logo.png"
+                src="/logo.webp"
                 alt="Quran Center UK logo"
                 width={56}
                 height={56}

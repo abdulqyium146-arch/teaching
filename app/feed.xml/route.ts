@@ -37,7 +37,7 @@ export function GET() {
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <ttl>60</ttl>
     <image>
-      <url>${BUSINESS_INFO.website}/logo.png</url>
+      <url>${BUSINESS_INFO.website}/logo.webp</url>
       <title>${BUSINESS_INFO.name}</title>
       <link>${BUSINESS_INFO.website}</link>
     </image>
