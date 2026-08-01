@@ -105,7 +105,6 @@ export function generateLocalBusinessSchema() {
     },
     sameAs: [
       BUSINESS_INFO.social.facebook,
-      BUSINESS_INFO.social.instagram,
       BUSINESS_INFO.social.youtube,
       BUSINESS_INFO.social.twitter,
     ],

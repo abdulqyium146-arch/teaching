@@ -54,8 +54,7 @@ export const BUSINESS_INFO = {
     online: 'Flexible — morning, afternoon & evening slots available 7 days a week',
   },
   social: {
-    facebook: 'https://facebook.com/qurancenteruk',
-    instagram: 'https://instagram.com/qurancenteruk',
+    facebook: 'https://www.facebook.com/share/19HSU8zpDZ/',
     youtube: 'https://youtube.com/@qurancenteruk',
     twitter: 'https://twitter.com/qurancenteruk',
   },

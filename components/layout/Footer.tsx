@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, ArrowRight } from 'lucide-react'
+import { Phone, Mail, MapPin, Facebook, Youtube, ArrowRight } from 'lucide-react'
 import { BUSINESS_INFO, FREE_TRIAL_WHATSAPP } from '@/lib/utils'
 
 const footerLinks = {
@@ -85,16 +85,7 @@ export function Footer() {
               >
                 <Facebook className="w-4 h-4" />
               </a>
-              <a
-                href={BUSINESS_INFO.social.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary-600 transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a
+<a
                 href={BUSINESS_INFO.social.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
