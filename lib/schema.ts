@@ -58,8 +58,22 @@ export function generateLocalBusinessSchema() {
         '@type': 'ContactPoint',
         telephone: BUSINESS_INFO.phone,
         contactType: 'customer service',
+        areaServed: 'SA',
         availableLanguage: ['English', 'Urdu', 'Arabic'],
         contactOption: 'TollFree',
+        hoursAvailable: {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+          opens: '00:00',
+          closes: '23:59',
+        },
+      },
+      {
+        '@type': 'ContactPoint',
+        telephone: `+${BUSINESS_INFO.whatsapp}`,
+        contactType: 'customer service',
+        areaServed: 'PK',
+        availableLanguage: ['English', 'Urdu', 'Arabic'],
         hoursAvailable: {
           '@type': 'OpeningHoursSpecification',
           dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
