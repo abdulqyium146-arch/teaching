@@ -40,7 +40,7 @@ export const BUSINESS_INFO = {
   phoneFormatted: '+966537562795',
   whatsapp: '923474825228',
   whatsappDisplay: '+92 347 4825228',
-  email: 'info@qurancenter.uk',
+  email: 'onlinequranclasses56@gmail.com',
   website: 'https://qurancenter.uk',
   founded: '2014',
   geo: {
