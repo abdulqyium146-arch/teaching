@@ -25,6 +25,9 @@ export interface Teacher {
   students: number
   rating: number
   gender: 'Male' | 'Female'
+  featured?: boolean
+  credentials?: string[]
+  whatsapp?: string
 }
 
 export interface Testimonial {

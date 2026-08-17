@@ -23,11 +23,11 @@ export function slugify(text: string): string {
 
 export const BUSINESS_INFO = {
   name: 'Quran Center UK',
-  tagline: 'Premier Islamic Education Centre in Manchester',
+  tagline: 'Learn Quran with an Ijazah-Certified Dr. — Manchester & Online UK',
   description:
-    'Quran Center UK is a certified Islamic education centre based in Levenshulme, Manchester, offering expert Quran tuition, Tajweed, Hifz, and Islamic Studies for children and adults — online across the UK and in-person in Manchester since 2014.',
+    'Quran Center UK is led by Dr. Omaima Habiba — an Ijazah-certified instructor (Hafs ʿan Asim), Assistant Professor, and Arabic Language Education Specialist. We offer expert Quran tuition, Tajweed, Hifz, and Islamic Studies for children and adults, online across the UK and in-person in Manchester since 2014.',
   shortDescription:
-    'Learn Quran online or in Manchester with certified teachers. Tajweed, Hifz, Noorani Qaida & Islamic Studies for all ages.',
+    'Learn Quran with Dr. Omaima Habiba — Ijazah-certified, Assistant Professor, and specialist in teaching Arabic to non-native speakers. Book your FREE trial today.',
   address: {
     street: '41 Hemmons Rd',
     area: 'Levenshulme',
@@ -36,10 +36,10 @@ export const BUSINESS_INFO = {
     country: 'United Kingdom',
     full: '41 Hemmons Rd, Levenshulme, Manchester M12 5TA, United Kingdom',
   },
-  phone: '+966 53 756 2795',
-  phoneFormatted: '+966537562795',
-  whatsapp: '923474825228',
-  whatsappDisplay: '+92 347 4825228',
+  phone: '+44 7346 277359',
+  phoneFormatted: '+447346277359',
+  whatsapp: '447346277359',
+  whatsappDisplay: '+44 7346 277359',
   email: 'onlinequranclasses56@gmail.com',
   website: 'https://qurancenter.uk',
   founded: '2014',

@@ -7,9 +7,9 @@ import { Shield, Clock, Users, Globe, Award, Heart } from 'lucide-react'
 const features = [
   {
     icon: Award,
-    title: 'Certified & Qualified Teachers',
+    title: 'Ijazah-Certified Head Instructor',
     description:
-      'All teachers hold recognised Islamic certifications — Ijazah, Sanad in Tajweed, Hifz certificates, and Alima degrees from reputable institutions.',
+      'Led by Dr. Omaima Habiba — Assistant Professor, Ijazah holder (Hafs ʿan Asim), and specialist in teaching Arabic to non-native speakers. An unbroken chain back to the Prophet ﷺ.',
     color: 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400',
   },
   {

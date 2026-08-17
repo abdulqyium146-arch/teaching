@@ -7,8 +7,8 @@ import { BUSINESS_INFO, FREE_TRIAL_WHATSAPP } from '@/lib/utils'
 
 const trustBadges = [
   '1,200+ Students',
-  '20+ Certified Teachers',
-  '10+ Years Experience',
+  'Ijazah-Certified Instructor',
+  'Dr.-Level Teaching',
   'Male & Female Teachers',
 ]
 

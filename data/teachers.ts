@@ -2,6 +2,28 @@ import { Teacher } from '@/types'
 
 export const teachers: Teacher[] = [
   {
+    id: '0',
+    name: 'Dr. Omaima Habiba',
+    title: 'Head Instructor — Arabic Language Education Specialist',
+    specialization: 'Quran & Tajweed (Ijazah – Hafs ʿan Asim) | Arabic for Non-Native Speakers',
+    experience: '15+ years',
+    education: 'Ph.D. | Assistant Professor | Ijazah – Hafs ʿan Asim | Curriculum Developer | Teacher Trainer',
+    image: '/images/dr-omaima.jpg',
+    students: 600,
+    rating: 5.0,
+    gender: 'Female',
+    featured: true,
+    credentials: [
+      'Ijazah – Hafs ʿan Asim',
+      'Assistant Professor',
+      'Arabic for Non-Native Speakers',
+      'Teacher Trainer',
+      'Curriculum Development',
+      'Research Supervisor',
+    ],
+    whatsapp: '447346277359',
+  },
+  {
     id: '1',
     name: 'Ustadh Abdul Rahman',
     title: 'Senior Quran Teacher & Hifz Supervisor',
