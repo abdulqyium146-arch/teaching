@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { ArrowRight, Play, Star, CheckCircle2, Phone } from 'lucide-react'
+import { ArrowRight, Play, Star, CheckCircle2, Phone, MessageCircle, Linkedin } from 'lucide-react'
 import { BUSINESS_INFO, FREE_TRIAL_WHATSAPP } from '@/lib/utils'
 
 const trustBadges = [
@@ -60,7 +60,7 @@ export function Hero() {
             initial="initial"
             animate="animate"
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
+            className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-4"
           >
             Learn the{' '}
             <span className="bg-clip-text text-transparent bg-gold-gradient">
@@ -69,6 +69,32 @@ export function Hero() {
             <br />
             with Expert Teachers
           </motion.h1>
+
+          {/* Instructor credential strip */}
+          <motion.div
+            variants={fadeUp}
+            initial="initial"
+            animate="animate"
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="flex flex-wrap items-center justify-center gap-3 mb-8"
+          >
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-gold/30 px-4 py-2 rounded-full text-sm text-white">
+              <span className="text-gold font-semibold">Dr. Omaima Habiba</span>
+              <span className="text-white/40">·</span>
+              <span className="text-white/70">Ijazah – Hafs ʿan Asim</span>
+              <span className="text-white/40">·</span>
+              <span className="text-white/70">Assistant Professor</span>
+            </div>
+            <a
+              href={BUSINESS_INFO.social.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-[#0A66C2]/80 hover:bg-[#0A66C2] border border-[#0A66C2] text-white px-4 py-2 rounded-full text-sm font-medium transition-all hover:scale-105"
+            >
+              <Linkedin className="w-3.5 h-3.5" />
+              View LinkedIn Profile
+            </a>
+          </motion.div>
 
           {/* Hadith quote */}
           <motion.div
@@ -115,24 +141,42 @@ export function Hero() {
             initial="initial"
             animate="animate"
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
+            className="flex flex-col items-center gap-4 mb-4"
           >
+            {/* Primary WhatsApp CTA */}
             <a
               href={FREE_TRIAL_WHATSAPP}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-gold-gradient text-dark px-8 py-4 rounded-2xl font-bold text-lg shadow-glow-gold hover:scale-105 transition-all duration-300 w-full sm:w-auto justify-center"
+              className="group flex items-center gap-3 bg-[#25D366] hover:bg-[#20b858] text-white px-10 py-5 rounded-2xl font-bold text-xl shadow-lg hover:shadow-[0_0_30px_rgba(37,211,102,0.4)] hover:scale-105 transition-all duration-300 w-full sm:w-auto justify-center"
             >
-              Book FREE Trial Class
+              <MessageCircle className="w-6 h-6 group-hover:animate-bounce" />
+              WhatsApp — Book FREE Trial Now
               <ArrowRight className="w-5 h-5" />
             </a>
-            <Link
-              href="/courses"
-              className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-white/20 transition-all duration-300 w-full sm:w-auto justify-center"
-            >
-              <Play className="w-5 h-5" />
-              Explore Courses
-            </Link>
+            <p className="text-white/50 text-xs">
+              ✓ Instant reply &nbsp;·&nbsp; ✓ No commitment &nbsp;·&nbsp; ✓ First class FREE
+            </p>
+
+            {/* Secondary buttons row */}
+            <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto">
+              <a
+                href={`https://wa.me/${BUSINESS_INFO.whatsapp}?text=Assalamu%20Alaykum%2C%20I%20am%20interested%20in%20Quran%20classes%20at%20Quran%20Center%20UK.%20Could%20you%20please%20provide%20more%20information%3F`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/30 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/20 transition-all duration-300 w-full sm:w-auto justify-center text-sm"
+              >
+                <MessageCircle className="w-4 h-4 text-[#25D366]" />
+                Quick Enquiry
+              </a>
+              <Link
+                href="/courses"
+                className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/30 text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/20 transition-all duration-300 w-full sm:w-auto justify-center text-sm"
+              >
+                <Play className="w-4 h-4" />
+                Explore Courses
+              </Link>
+            </div>
           </motion.div>
 
           {/* Trust badges */}
