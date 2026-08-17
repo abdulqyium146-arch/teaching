@@ -4,9 +4,10 @@ import { CTASection } from '@/components/sections/CTASection'
 import { TeachersSection } from '@/components/sections/TeachersSection'
 import { teachers } from '@/data/teachers'
 import { createMetadata } from '@/lib/metadata'
-import { generateBreadcrumbSchema } from '@/lib/schema'
+import { generateBreadcrumbSchema, generateInstructorSchema } from '@/lib/schema'
 import { BUSINESS_INFO } from '@/lib/utils'
 import { CheckCircle2, Target, Eye, Heart } from 'lucide-react'
+import { InstructorAbout } from '@/components/sections/InstructorAbout'
 
 export const metadata: Metadata = createMetadata({
   title: 'About Quran Center UK',
@@ -54,6 +55,7 @@ const methodology = [
 ]
 
 export default function AboutPage() {
+  const instructorSchema = generateInstructorSchema()
   const breadcrumb = generateBreadcrumbSchema([
     { name: 'Home', url: BUSINESS_INFO.website },
     { name: 'About Us', url: `${BUSINESS_INFO.website}/about` },
@@ -64,6 +66,10 @@ export default function AboutPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(instructorSchema) }}
       />
 
       {/* Hero */}
@@ -196,6 +202,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <InstructorAbout />
       <TeachersSection teachers={teachers} />
       <CTASection
         title="Join the Quran Center UK Family"

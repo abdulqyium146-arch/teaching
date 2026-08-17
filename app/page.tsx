@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import { Hero } from '@/components/sections/Hero'
 import { StatsSection } from '@/components/sections/StatsSection'
+import { InstructorAbout } from '@/components/sections/InstructorAbout'
 import { CoursesGrid } from '@/components/sections/CoursesGrid'
 import { WhyChooseUs } from '@/components/sections/WhyChooseUs'
 import { TeachersSection } from '@/components/sections/TeachersSection'
@@ -12,7 +13,7 @@ import { courses } from '@/data/courses'
 import { teachers } from '@/data/teachers'
 import { testimonials } from '@/data/testimonials'
 import { homeFaqs } from '@/data/faqs'
-import { generateFAQSchema } from '@/lib/schema'
+import { generateFAQSchema, generateInstructorSchema } from '@/lib/schema'
 import { BUSINESS_INFO } from '@/lib/utils'
 
 export const metadata: Metadata = {
@@ -53,6 +54,7 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   const faqSchema = generateFAQSchema(homeFaqs)
+  const instructorSchema = generateInstructorSchema()
 
   return (
     <>
@@ -60,8 +62,13 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(instructorSchema) }}
+      />
       <Hero />
       <StatsSection />
+      <InstructorAbout />
       <CoursesGrid
         courses={courses}
         title="Our Islamic Education Courses"

@@ -143,6 +143,61 @@ export function generateLocalBusinessSchema() {
   }
 }
 
+export function generateInstructorSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': `${BUSINESS_INFO.website}/#instructor`,
+    name: 'Dr. Omaima Habiba',
+    honorificPrefix: 'Dr.',
+    jobTitle: 'Assistant Professor & Lead Quran Instructor',
+    description:
+      'PhD in Curriculum & Instruction (TAFL), Ijazah holder (Hafs ʿan Asim), Assistant Professor, Arabic Language Education Specialist, and Teacher Trainer with 20+ years of international higher education experience.',
+    image: `${BUSINESS_INFO.website}/dr-omaima-habiba.webp`,
+    url: `${BUSINESS_INFO.website}/about`,
+    telephone: BUSINESS_INFO.phone,
+    email: BUSINESS_INFO.email,
+    sameAs: [BUSINESS_INFO.social.linkedin],
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Manchester',
+      addressCountry: 'GB',
+    },
+    alumniOf: {
+      '@type': 'CollegeOrUniversity',
+      name: 'Higher Education Institution',
+    },
+    hasCredential: [
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'doctorate',
+        name: 'PhD in Curriculum and Instruction (TAFL)',
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'certification',
+        name: 'Ijazah – Hafs ʿan Asim',
+        description: 'Certified Quranic transmission with unbroken chain to Prophet Muhammad ﷺ',
+      },
+    ],
+    knowsAbout: [
+      'Quran & Tajweed',
+      'Teaching Arabic as a Foreign Language (TAFL)',
+      'Curriculum Development',
+      'Islamic Studies',
+      'Teacher Education',
+      'Educational Leadership',
+      'Arabic Language Teaching',
+      'Instructional Design',
+      'Assessment & Quality Assurance',
+      'Online & Blended Learning',
+    ],
+    worksFor: {
+      '@id': `${BUSINESS_INFO.website}/#organization`,
+    },
+  }
+}
+
 export function generateWebSiteSchema() {
   return {
     '@context': 'https://schema.org',
