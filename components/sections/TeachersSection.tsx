@@ -1,9 +1,11 @@
 'use client'
 
 import { useRef } from 'react'
+import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
-import { Star, Users, BadgeCheck, MessageCircle } from 'lucide-react'
+import { Star, Users, BadgeCheck, MessageCircle, Linkedin } from 'lucide-react'
 import { Teacher } from '@/types'
+import { BUSINESS_INFO } from '@/lib/utils'
 
 interface TeachersSectionProps {
   teachers: Teacher[]
@@ -47,16 +49,24 @@ export function TeachersSection({ teachers }: TeachersSectionProps) {
             className="mb-8 rounded-3xl overflow-hidden border-2 border-gold/40 bg-gradient-to-br from-dark via-primary-900 to-dark shadow-glow-gold"
           >
             <div className="grid md:grid-cols-2 gap-0">
-              {/* Left — avatar + stats */}
-              <div className="flex flex-col items-center justify-center p-8 md:p-12 bg-teal-gradient relative">
+              {/* Left — photo + stats */}
+              <div className="flex flex-col items-center justify-center p-8 md:p-10 bg-teal-gradient relative">
                 {/* Gold badge */}
                 <span className="absolute top-4 left-4 bg-gold text-dark text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                   Head Instructor
                 </span>
 
-                <div className="w-32 h-32 rounded-full bg-white/20 border-4 border-gold/60 flex items-center justify-center text-white font-bold text-4xl font-heading mb-4">
-                  OH
+                {/* Real photo */}
+                <div className="relative w-36 h-36 rounded-full border-4 border-gold/60 overflow-hidden mb-4 shadow-lg">
+                  <Image
+                    src="/dr-omaima-habiba.webp"
+                    alt="Dr. Omaima Habiba — Ijazah-Certified Quran Instructor"
+                    fill
+                    className="object-cover object-top"
+                    sizes="144px"
+                  />
                 </div>
+
                 <h3 className="font-heading font-bold text-white text-xl mb-1 text-center">
                   {featured.name}
                 </h3>
@@ -87,17 +97,28 @@ export function TeachersSection({ teachers }: TeachersSectionProps) {
                   </div>
                 </div>
 
-                {featured.whatsapp && (
+                <div className="flex gap-3">
+                  {featured.whatsapp && (
+                    <a
+                      href={`https://wa.me/${featured.whatsapp}?text=Assalamu%20Alaykum%20Dr.%20Omaima%2C%20I%20would%20like%20to%20enquire%20about%20Quran%20classes%20at%20Quran%20Center%20UK.`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 bg-[#25D366] hover:bg-[#20b858] text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-all hover:scale-105 shadow-lg"
+                    >
+                      <MessageCircle className="w-4 h-4" />
+                      WhatsApp
+                    </a>
+                  )}
                   <a
-                    href={`https://wa.me/${featured.whatsapp}?text=Assalamu%20Alaykum%20Dr.%20Omaima%2C%20I%20would%20like%20to%20enquire%20about%20Quran%20classes%20at%20Quran%20Center%20UK.`}
+                    href={BUSINESS_INFO.social.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-[#25D366] hover:bg-[#20b858] text-white px-6 py-3 rounded-xl font-semibold text-sm transition-all hover:scale-105 shadow-lg"
+                    className="flex items-center gap-2 bg-[#0A66C2] hover:bg-[#0958a8] text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-all hover:scale-105 shadow-lg"
                   >
-                    <MessageCircle className="w-4 h-4" />
-                    WhatsApp Dr. Omaima
+                    <Linkedin className="w-4 h-4" />
+                    LinkedIn
                   </a>
-                )}
+                </div>
               </div>
 
               {/* Right — credentials */}

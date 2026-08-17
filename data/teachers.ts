@@ -8,7 +8,7 @@ export const teachers: Teacher[] = [
     specialization: 'Quran & Tajweed (Ijazah – Hafs ʿan Asim) | Arabic for Non-Native Speakers',
     experience: '15+ years',
     education: 'Ph.D. | Assistant Professor | Ijazah – Hafs ʿan Asim | Curriculum Developer | Teacher Trainer',
-    image: '/images/dr-omaima.jpg',
+    image: '/dr-omaima-habiba.webp',
     students: 600,
     rating: 5.0,
     gender: 'Female',
