@@ -58,21 +58,22 @@ export const metadata: Metadata = {
     siteName: 'Quran Center UK',
     title: 'Quran Center UK | Premium Quran Classes Manchester & Online',
     description:
-      'Learn Quran online or in Manchester with certified teachers. Tajweed, Hifz, Noorani Qaida, Islamic Studies for all ages.',
+      'Learn Quran with Dr. Omaima Habiba — Ijazah-certified instructor. Tajweed, Hifz, Noorani Qaida, Islamic Studies for all ages.',
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: `${BUSINESS_INFO.website}/quran-center-uk-hero.webp`,
         width: 1200,
         height: 630,
-        alt: 'Quran Center UK — Premium Islamic Education',
+        alt: 'Quran Center UK — Learn Quran with an Ijazah-Certified Dr. in Manchester & Online',
+        type: 'image/webp',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Quran Center UK | Premium Quran Classes Manchester & Online',
-    description: 'Learn Quran online or in Manchester with certified teachers.',
-    images: ['/images/og-image.jpg'],
+    title: 'Quran Center UK | Ijazah-Certified Quran Classes Manchester & Online',
+    description: 'Learn Quran with Dr. Omaima Habiba — Ijazah-certified, Assistant Professor. Book your FREE trial.',
+    images: [`${BUSINESS_INFO.website}/quran-center-uk-hero.webp`],
     creator: '@qurancenteruk',
   },
   robots: {
@@ -97,11 +98,13 @@ export const metadata: Metadata = {
       { url: '/favicon.ico', sizes: 'any' },
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/logo.webp', sizes: 'any', type: 'image/webp' },
+      { url: '/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
     ],
     apple: [
       { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
+    shortcut: '/favicon.ico',
     other: [
       { rel: 'mask-icon', url: '/logo.webp', color: '#0F766E' },
     ],

@@ -12,7 +12,7 @@ export function generateLocalBusinessSchema() {
     telephone: BUSINESS_INFO.phone,
     email: BUSINESS_INFO.email,
     foundingDate: BUSINESS_INFO.founded,
-    image: `${BUSINESS_INFO.website}/images/og-image.jpg`,
+    image: `${BUSINESS_INFO.website}/quran-center-uk-hero.webp`,
     logo: {
       '@type': 'ImageObject',
       url: `${BUSINESS_INFO.website}/logo.webp`,

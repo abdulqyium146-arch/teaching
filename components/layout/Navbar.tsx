@@ -85,11 +85,13 @@ export function Navbar() {
           <Link href="/" className="flex items-center gap-2 group">
             <Image
               src="/logo.webp"
-              alt="Quran Center UK logo"
+              alt="Quran Center UK — Ijazah-Certified Quran Classes Manchester"
               width={48}
               height={48}
+              sizes="48px"
               className="h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
               priority
+              fetchPriority="high"
             />
           </Link>
 

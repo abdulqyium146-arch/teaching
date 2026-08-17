@@ -65,9 +65,10 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-3 mb-5">
               <Image
                 src="/logo.webp"
-                alt="Quran Center UK logo"
+                alt="Quran Center UK — Ijazah-Certified Quran Classes Manchester"
                 width={56}
                 height={56}
+                sizes="56px"
                 className="h-14 w-auto object-contain"
               />
             </Link>

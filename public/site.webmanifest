@@ -1,7 +1,7 @@
 {
   "name": "Quran Center UK",
-  "short_name": "Quran Center",
-  "description": "Premium Quran & Islamic Education — Manchester & Online UK",
+  "short_name": "QCU",
+  "description": "Learn Quran with Dr. Omaima Habiba — Ijazah-certified instructor. Tajweed, Hifz, Arabic & Islamic Studies online and in Manchester.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0F172A",
