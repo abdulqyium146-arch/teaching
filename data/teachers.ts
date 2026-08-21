@@ -21,7 +21,7 @@ export const teachers: Teacher[] = [
       'Curriculum Development',
       'Research Supervisor',
     ],
-    whatsapp: '447346277359',
+    whatsapp: '447916909531',
   },
   {
     id: '1',
