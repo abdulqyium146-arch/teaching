@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Phone, X } from 'lucide-react'
-import { FREE_TRIAL_WHATSAPP, BUSINESS_INFO } from '@/lib/utils'
+import Link from 'next/link'
+import { MessageCircle, CalendarCheck, X } from 'lucide-react'
+import { FREE_TRIAL_WHATSAPP } from '@/lib/utils'
 
 export function StickyMobileCTA() {
   const [visible, setVisible] = useState(false)
@@ -40,21 +41,22 @@ export function StickyMobileCTA() {
           <p className="text-xs text-gray-500 dark:text-gray-400 mb-2 text-center">
             🌙 Join 1,200+ students — No commitment required
           </p>
-          <div className="flex gap-3">
+          <div className="flex gap-2">
+            <Link
+              href="/book"
+              className="flex-1 flex items-center justify-center gap-1.5 bg-teal-gradient text-white py-3 rounded-xl font-bold text-sm"
+            >
+              <CalendarCheck className="w-4 h-4" />
+              Book FREE Trial
+            </Link>
             <a
               href={FREE_TRIAL_WHATSAPP}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 text-center bg-teal-gradient text-white py-3 rounded-xl font-bold text-sm"
+              className="flex-1 flex items-center justify-center gap-1.5 bg-[#25D366] text-white py-3 rounded-xl font-bold text-sm"
             >
-              Book FREE Trial
-            </a>
-            <a
-              href={`tel:${BUSINESS_INFO.phoneFormatted}`}
-              className="w-12 flex items-center justify-center bg-gray-100 dark:bg-white/10 rounded-xl"
-              aria-label="Call us"
-            >
-              <Phone className="w-5 h-5 text-primary-600 dark:text-primary-400" />
+              <MessageCircle className="w-4 h-4" />
+              WhatsApp
             </a>
           </div>
         </motion.div>

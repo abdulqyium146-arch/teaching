@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Phone, Sun, Moon, ChevronDown } from 'lucide-react'
+import { Menu, X, Phone, Sun, Moon, ChevronDown, CalendarCheck } from 'lucide-react'
 import Image from 'next/image'
 import { useTheme } from 'next-themes'
 import { cn, BUSINESS_INFO, FREE_TRIAL_WHATSAPP } from '@/lib/utils'
@@ -164,14 +164,13 @@ export function Navbar() {
               )}
             </button>
 
-            <a
-              href={FREE_TRIAL_WHATSAPP}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/book"
               className="hidden lg:flex items-center gap-2 bg-teal-gradient text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-glow hover:shadow-glow-gold hover:scale-105 transition-all duration-300"
             >
-              Book Free Trial
-            </a>
+              <CalendarCheck className="w-4 h-4" />
+              Book FREE Trial
+            </Link>
 
             {/* Mobile menu toggle */}
             <button
@@ -223,14 +222,22 @@ export function Navbar() {
                   )}
                 </div>
               ))}
-              <div className="pt-2 border-t border-gray-100 dark:border-gray-800">
+              <div className="pt-2 border-t border-gray-100 dark:border-gray-800 space-y-2">
+                <Link
+                  href="/book"
+                  onClick={() => setIsOpen(false)}
+                  className="flex items-center justify-center gap-2 w-full bg-teal-gradient text-white px-5 py-3 rounded-xl text-sm font-bold"
+                >
+                  <CalendarCheck className="w-4 h-4" />
+                  Book FREE Trial Class
+                </Link>
                 <a
                   href={FREE_TRIAL_WHATSAPP}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full text-center bg-teal-gradient text-white px-5 py-3 rounded-xl text-sm font-semibold"
+                  className="flex items-center justify-center gap-2 w-full bg-[#25D366] text-white px-5 py-3 rounded-xl text-sm font-semibold"
                 >
-                  Book Free Trial Class
+                  WhatsApp Us Instead
                 </a>
               </div>
               <div className="flex items-center justify-between px-4 py-2">

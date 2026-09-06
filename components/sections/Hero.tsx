@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowRight, Play, Star, CheckCircle2, Phone, MessageCircle, Linkedin, BadgeCheck } from 'lucide-react'
+import { ArrowRight, Star, CheckCircle2, Phone, MessageCircle, Linkedin, BadgeCheck, CalendarCheck } from 'lucide-react'
 import { BUSINESS_INFO, FREE_TRIAL_WHATSAPP } from '@/lib/utils'
 
 const trustBadges = [
@@ -151,11 +151,11 @@ export function Hero() {
                   {BUSINESS_INFO.phone}
                 </a>
                 <Link
-                  href="/courses"
-                  className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/30 text-white px-5 py-3 rounded-xl font-semibold hover:bg-white/20 transition-all text-sm justify-center"
+                  href="/book"
+                  className="flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-gold/40 text-white px-5 py-3 rounded-xl font-semibold hover:bg-gold/20 hover:border-gold transition-all text-sm justify-center"
                 >
-                  <Play className="w-4 h-4" />
-                  Explore Courses
+                  <CalendarCheck className="w-4 h-4 text-gold" />
+                  Book FREE Trial
                 </Link>
               </div>
             </motion.div>

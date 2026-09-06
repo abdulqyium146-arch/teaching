@@ -1,9 +1,10 @@
 'use client'
 
 import { useRef } from 'react'
+import Link from 'next/link'
 import { motion, useInView } from 'framer-motion'
-import { ArrowRight, Phone } from 'lucide-react'
-import { FREE_TRIAL_WHATSAPP, BUSINESS_INFO } from '@/lib/utils'
+import { ArrowRight, MessageCircle, CalendarCheck } from 'lucide-react'
+import { FREE_TRIAL_WHATSAPP } from '@/lib/utils'
 
 interface CTASectionProps {
   title?: string
@@ -57,29 +58,32 @@ export function CTASection({
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            {/* Primary — booking form */}
+            <Link
+              href="/book"
+              className={`flex items-center gap-2 px-8 py-4 rounded-2xl font-bold text-lg transition-all hover:scale-105 w-full sm:w-auto justify-center shadow-lg ${
+                variant === 'primary' || variant === 'dark'
+                  ? 'bg-white text-primary-700 hover:bg-gold hover:text-dark'
+                  : 'bg-teal-gradient text-white hover:shadow-glow'
+              }`}
+            >
+              <CalendarCheck className="w-5 h-5" />
+              Book FREE Trial Online
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+            {/* Secondary — WhatsApp instant */}
             <a
               href={FREE_TRIAL_WHATSAPP}
               target="_blank"
               rel="noopener noreferrer"
-              className={`flex items-center gap-2 px-8 py-4 rounded-2xl font-bold text-lg transition-all hover:scale-105 w-full sm:w-auto justify-center ${
-                variant === 'primary' || variant === 'dark'
-                  ? 'bg-white text-primary-700 hover:bg-gold hover:text-dark shadow-lg'
-                  : 'bg-teal-gradient text-white hover:shadow-glow'
-              }`}
-            >
-              Book FREE Trial Class
-              <ArrowRight className="w-5 h-5" />
-            </a>
-            <a
-              href={`tel:${BUSINESS_INFO.phoneFormatted}`}
               className={`flex items-center gap-2 px-8 py-4 rounded-2xl font-semibold text-lg border transition-all w-full sm:w-auto justify-center ${
                 variant === 'primary' || variant === 'dark'
                   ? 'border-white/30 text-white hover:bg-white/10'
                   : 'border-primary-200 text-primary-700 dark:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-900/20'
               }`}
             >
-              <Phone className="w-5 h-5" />
-              Call Us Now
+              <MessageCircle className="w-5 h-5" />
+              Chat on WhatsApp
             </a>
           </div>
         </motion.div>
