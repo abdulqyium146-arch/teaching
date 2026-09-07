@@ -36,10 +36,10 @@ export const BUSINESS_INFO = {
     country: 'United Kingdom',
     full: '41 Hemmons Rd, Levenshulme, Manchester M12 5TA, United Kingdom',
   },
-  phone: '+92 347 4825228',
-  phoneFormatted: '+923474825228',
-  whatsapp: '923474825228',
-  whatsappDisplay: '+92 347 4825228',
+  phone: '+92 309 0078997',
+  phoneFormatted: '+923090078997',
+  whatsapp: '923090078997',
+  whatsappDisplay: '+92 309 0078997',
   email: 'onlinequranclasses56@gmail.com',
   website: 'https://qurancenter.uk',
   founded: '2014',
@@ -80,6 +80,6 @@ export const BUSINESS_INFO = {
   ],
 }
 
-export const WHATSAPP_URL = `https://wa.me/${BUSINESS_INFO.whatsapp}?text=Assalamu%20Alaykum%2C%20I%20am%20interested%20in%20Quran%20classes%20at%20Quran%20Center%20UK.%20Could%20you%20please%20provide%20more%20information%3F`
+export const WHATSAPP_URL = `https://wa.me/${BUSINESS_INFO.whatsapp}?text=Assalamu%20Alaykum%20%F0%9F%8C%99%20I%20found%20Quran%20Center%20UK%20online%20and%20I%27m%20interested%20in%20joining%20classes.%20Could%20you%20please%20share%20more%20details%3F`
 
-export const FREE_TRIAL_WHATSAPP = `https://wa.me/${BUSINESS_INFO.whatsapp}?text=Assalamu%20Alaykum%2C%20I%20would%20like%20to%20book%20a%20FREE%20trial%20class%20at%20Quran%20Center%20UK.`
+export const FREE_TRIAL_WHATSAPP = `https://wa.me/${BUSINESS_INFO.whatsapp}?text=Assalamu%20Alaykum%20%F0%9F%8C%99%20I%27d%20like%20to%20book%20my%20FREE%20trial%20class%20at%20Quran%20Center%20UK.%20Please%20let%20me%20know%20the%20available%20slots.`
