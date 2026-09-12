@@ -34,7 +34,7 @@ export const faqs: FAQ[] = [
   {
     id: '6',
     question: 'What qualifications do your teachers have?',
-    answer: 'All our teachers hold Ijazah — a certified chain of Quran transmission going back to the Prophet ﷺ — plus Tajweed Sanad, Hifz certificates, and teaching experience. Many also hold Alima degrees from reputable Islamic institutions.',
+    answer: 'Our lead instructor Hafiz Raza is a certified Hafiz ul Quran and Tajweed teacher with 10+ years of experience. We also have qualified male and female teachers — all are Hafiz-certified, Tajweed-trained, and DBS-checked. Both male and female teachers are available so every student can learn comfortably.',
     category: 'Teachers',
   },
   {

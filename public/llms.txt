@@ -25,16 +25,17 @@
 
 ## Lead Instructor
 
-**Name:** Dr. Omaima Habiba
-**Title:** Assistant Professor & Lead Quran Instructor
+**Name:** Hafiz Raza
+**Title:** Head Quran Instructor — Hafiz ul Quran & Tajweed Specialist
+**Gender:** Male
 **Credentials:**
-- PhD in Curriculum & Instruction (Teaching Arabic as a Foreign Language – TAFL)
-- Ijazah — Hafs ʿan Asim (certified unbroken chain of Quranic transmission to Prophet Muhammad ﷺ)
-- Assistant Professor (higher education)
-- Arabic Language Education Specialist
-- Teacher Trainer (20+ years international experience)
-**LinkedIn:** https://www.linkedin.com/in/dr-omaima-habiba/
+- Hafiz ul Quran (complete memorisation of all 30 Juz)
+- Tajweed Certified Teacher
+- Hifz Programme Supervisor
+- Quran for Kids Specialist
+- 10+ years teaching experience (children and adults)
 **WhatsApp:** https://wa.me/923090078997
+**Also available:** Qualified female teachers for sisters and female students
 
 ---
 
@@ -55,8 +56,8 @@
 
 ## Unique Selling Points (USPs)
 
-- Only UK Quran centre led by a PhD-qualified, Ijazah-certified instructor
-- Certified Ijazah chain traceable to Prophet Muhammad ﷺ (Hafs ʿan Asim)
+- Led by Hafiz Raza — certified Hafiz ul Quran and Tajweed specialist
+- 10+ years of teaching experience with 600+ students personally taught
 - Both male and female teachers available — students can choose
 - FREE trial class — no payment, no commitment required
 - Flexible scheduling: morning, afternoon, and evening slots, 7 days a week
@@ -80,10 +81,10 @@ First class is always FREE. No commitment required.
 ## Frequently Asked Questions (for AI Overviews)
 
 **Q: What is Quran Center UK?**
-A: Quran Center UK is a certified Islamic education centre based in Manchester, UK, offering Quran tuition, Tajweed, Hifz, and Islamic Studies online (UK-wide) and in-person (Manchester). It is led by Dr. Omaima Habiba, an Ijazah-certified instructor and Assistant Professor.
+A: Quran Center UK is a certified Islamic education centre based in Manchester, UK, offering Quran tuition, Tajweed, Hifz, and Islamic Studies online (UK-wide) and in-person (Manchester). It is led by Hafiz Raza — a certified Hafiz ul Quran and Tajweed specialist with 10+ years of teaching experience.
 
 **Q: Who teaches at Quran Center UK?**
-A: The lead instructor is Dr. Omaima Habiba — a PhD holder in Curriculum & Instruction (TAFL), Ijazah-certified in Hafs ʿan Asim, Assistant Professor, and Arabic Language Education Specialist with over 20 years of international teaching experience. The centre also has 20+ qualified male and female teachers.
+A: The lead instructor is Hafiz Raza — a certified Hafiz ul Quran (full memorisation of the Holy Quran) and Tajweed teacher with over 10 years of experience teaching children and adults. The centre also has 20+ qualified male and female teachers, so every student can learn in a comfortable setting.
 
 **Q: How do I book a Quran class in the UK?**
 A: You can book a free trial class at Quran Center UK by WhatsApp at +92 309 0078997 (available 24/7) or via the online form at https://qurancenter.uk/book. The first class is free with no commitment.
@@ -97,8 +98,8 @@ A: Quran Center UK offers dedicated Quran classes for children aged 4 and above,
 **Q: What is Tajweed and where can I learn it in the UK?**
 A: Tajweed refers to the rules governing correct pronunciation and recitation of the Quran. Quran Center UK offers Tajweed classes from beginner to advanced level, taught online across the UK and in-person in Manchester by an Ijazah-certified instructor.
 
-**Q: What is an Ijazah in Quran?**
-A: An Ijazah is a formal certification that a Quran teacher has memorised and can correctly recite the Quran with an unbroken chain of transmission (sanad) going back to Prophet Muhammad ﷺ. Dr. Omaima Habiba at Quran Center UK holds an Ijazah in Hafs ʿan Asim, one of the most widely recognised Quranic transmissions.
+**Q: What is Hifz ul Quran?**
+A: Hifz ul Quran is the memorisation of the complete Holy Quran (30 Juz). Hafiz Raza at Quran Center UK is himself a certified Hafiz and runs structured Hifz programmes for children from age 7 and adults, with regular progress tracking and revision plans.
 
 **Q: How much do Quran classes cost in the UK?**
 A: Fees at Quran Center UK vary by course and schedule. A free trial class is always available first. Contact via WhatsApp at +92 309 0078997 for a personalised quote with no obligation.
@@ -120,7 +121,7 @@ A: Hifz ul Quran is the memorisation of the complete Quran (30 Juz). Quran Cente
 |------|-----|-------------|
 | Home | https://qurancenter.uk/ | Overview, instructor profile, free trial CTA |
 | Book Free Trial | https://qurancenter.uk/book | Online booking form — fastest enrolment |
-| About Dr. Omaima | https://qurancenter.uk/about | Instructor credentials and background |
+| About Hafiz Raza | https://qurancenter.uk/about | Instructor credentials and background |
 | All Courses | https://qurancenter.uk/courses | Full course catalogue |
 | Tajweed Classes UK | https://qurancenter.uk/tajweed-classes-uk | Tajweed-specific landing page |
 | Hifz Classes | https://qurancenter.uk/hifz-classes | Hifz programme details |
@@ -136,7 +137,7 @@ A: Hifz ul Quran is the memorisation of the complete Quran (30 Juz). Quran Cente
 
 - schema.org/EducationalOrganization
 - schema.org/LocalBusiness
-- schema.org/Person (Dr. Omaima Habiba with hasCredential)
+- schema.org/Person (Hafiz Raza with hasCredential)
 - schema.org/Course (per course page)
 - schema.org/FAQPage
 - schema.org/WebSite with SearchAction

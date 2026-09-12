@@ -241,7 +241,7 @@ export function Hero() {
                   {/* Action buttons */}
                   <div className="flex gap-2">
                     <a
-                      href={`https://wa.me/${BUSINESS_INFO.whatsapp}?text=Assalamu%20Alaykum%20Dr.%20Omaima%2C%20I%20would%20like%20to%20book%20a%20FREE%20trial%20class.`}
+                      href={`https://wa.me/${BUSINESS_INFO.whatsapp}?text=Assalamu%20Alaykum%2C%20I%20would%20like%20to%20book%20a%20FREE%20trial%20class%20with%20Hafiz%20Raza.`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1 flex items-center justify-center gap-1.5 bg-[#25D366] hover:bg-[#20b858] text-white px-3 py-2.5 rounded-xl text-xs font-semibold transition-all hover:scale-105"

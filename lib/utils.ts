@@ -58,7 +58,7 @@ export const BUSINESS_INFO = {
     facebook: 'https://www.facebook.com/share/19HSU8zpDZ/',
     youtube: 'https://youtube.com/@qurancenteruk',
     twitter: 'https://twitter.com/qurancenteruk',
-    linkedin: 'https://www.linkedin.com/in/dr-omaima-habiba/',
+    linkedin: 'https://www.linkedin.com/company/quran-center-uk/',
   },
   stats: {
     students: '1,200+',

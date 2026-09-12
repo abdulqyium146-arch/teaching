@@ -93,7 +93,7 @@ export function TeachersSection({ teachers }: TeachersSectionProps) {
                 <div className="flex gap-3">
                   {featured.whatsapp && (
                     <a
-                      href={`https://wa.me/${featured.whatsapp}?text=Assalamu%20Alaykum%20Dr.%20Omaima%2C%20I%20would%20like%20to%20enquire%20about%20Quran%20classes%20at%20Quran%20Center%20UK.`}
+                      href={`https://wa.me/${featured.whatsapp}?text=Assalamu%20Alaykum%20Hafiz%20Raza%2C%20I%20would%20like%20to%20enquire%20about%20Quran%20classes%20at%20Quran%20Center%20UK.`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 bg-[#25D366] hover:bg-[#20b858] text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-all hover:scale-105 shadow-lg"

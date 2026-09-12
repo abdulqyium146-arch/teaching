@@ -62,7 +62,7 @@ const hifzFaqs = [
 ]
 
 const features = [
-  { icon: BookOpen, title: 'Ijazah-Certified Teachers', desc: 'Every Hifz teacher holds a chain of Ijazah — a certified transmission of the Quran passed directly from teacher to student going back to the Prophet ﷺ.' },
+  { icon: BookOpen, title: 'Hafiz-Certified Teachers', desc: 'Every Hifz teacher at Quran Center UK is a certified Hafiz ul Quran with Tajweed training — led by Hafiz Raza, our head instructor with 10+ years of experience.' },
   { icon: Users, title: 'All Ages & Genders', desc: 'Dedicated programmes for children from age 7, adults, and sisters — with appropriate pacing, female teachers for ladies, and family discounts available.' },
   { icon: Clock, title: 'Flexible Scheduling', desc: 'Weekday, weekend, morning, evening and online slots. We work around your life — school hours, work commitments, and family routines.' },
   { icon: Star, title: 'Structured Revision System', desc: 'Our proven sabaq, sabqi, and manzil revision system ensures what is memorised stays memorised — permanently, not just temporarily.' },
@@ -235,7 +235,7 @@ export default function HifzClassesPage() {
             <p>
               We offer <strong>Hifz classes for kids</strong> from age 7, <strong>adult Hifz classes</strong> with flexible evening and weekend slots,
               and a dedicated <strong>sisters' Hifz programme</strong> taught by female Ustadhas.
-              All our Hifz teachers hold Ijazah — a scholarly chain of transmission linking them directly to the Prophet Muhammad ﷺ.
+              All our Hifz teachers are certified Hafiz ul Quran with Tajweed training and years of teaching experience.
               Book your free trial and begin the most rewarding journey of your life.
             </p>
           </div>

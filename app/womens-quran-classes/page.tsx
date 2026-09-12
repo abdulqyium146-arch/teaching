@@ -63,7 +63,7 @@ const features = [
   { icon: Shield, title: 'Female Teachers Only', desc: 'Every session for sisters is led by a qualified, experienced female Ustadha. No exceptions — your comfort and Islamic propriety are our priority.' },
   { icon: Heart, title: 'Warm & Nurturing Environment', desc: 'Our sisters\' classes are a safe space — encouraging, non-judgemental, and supportive. Many sisters say it is the most comfortable learning environment they have experienced.' },
   { icon: BookOpen, title: 'Full Course Range', desc: 'Noorani Qaida, Quran reading, Tajweed, full Hifz programme, Islamic Studies — every course available specifically for women, at every level.' },
-  { icon: Star, title: 'Ijazah-Certified Ustadhas', desc: 'Our female teachers hold Ijazah in Quran recitation — a scholarly certification linking them through an unbroken chain to the Prophet Muhammad ﷺ.' },
+  { icon: Star, title: 'Certified Female Teachers', desc: 'Our female teachers are certified Hafizas with Tajweed training and years of experience — qualified, caring, and dedicated to helping every sister learn correctly.' },
   { icon: Clock, title: 'Flexible Times for Busy Sisters', desc: 'Morning, afternoon, evening and weekend slots. Our schedule is built around the reality of sisters\' lives — motherhood, work, and family responsibilities.' },
   { icon: Users, title: 'All Ages Welcome', desc: 'Young girls from age 4, teenagers, adults, and elderly sisters are all welcome. It is never too early — or too late — to connect with the Quran.' },
 ]
