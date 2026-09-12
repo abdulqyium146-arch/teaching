@@ -151,7 +151,7 @@ export function generateInstructorSchema() {
     name: 'Hafiz Raza',
     jobTitle: 'Head Quran Instructor & Tajweed Specialist',
     description:
-      'Hafiz ul Quran and certified Tajweed teacher with 10+ years of experience teaching children and adults online and in Manchester. Specialist in Hifz programmes, Noorani Qaida, and Quran for kids.',
+      'Hafiz ul Quran and certified Tajweed teacher with 5 years of experience teaching children and adults online and in Manchester. Specialist in Hifz programmes, Noorani Qaida, and Quran for kids.',
     image: `${BUSINESS_INFO.website}/logo.webp`,
     url: `${BUSINESS_INFO.website}/about`,
     telephone: BUSINESS_INFO.phone,

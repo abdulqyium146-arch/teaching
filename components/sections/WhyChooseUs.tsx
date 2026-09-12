@@ -9,7 +9,7 @@ const features = [
     icon: Award,
     title: 'Certified & Experienced Head Instructor',
     description:
-      'Led by Hafiz Raza — a certified Hafiz ul Quran and Tajweed specialist with 10+ years of teaching experience. Dedicated to helping students of all ages learn correctly.',
+      'Led by Hafiz Raza — a certified Hafiz ul Quran and Tajweed specialist with 5 years of teaching experience. Dedicated to helping students of all ages learn correctly.',
     color: 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400',
   },
   {

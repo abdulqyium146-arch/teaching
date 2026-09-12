@@ -24,7 +24,7 @@ const highlights = [
   { icon: BookOpen, label: 'Hafiz ul Quran — Full Quran Memorised', color: 'text-gold' },
   { icon: BadgeCheck, label: 'Tajweed Certified Teacher', color: 'text-green-400' },
   { icon: Users, label: 'Male & Female Teachers Available', color: 'text-blue-400' },
-  { icon: Clock, label: '10+ Years Teaching Experience', color: 'text-purple-400' },
+  { icon: Clock, label: '5 Years Teaching Experience', color: 'text-purple-400' },
 ]
 
 export function InstructorAbout() {
@@ -54,7 +54,7 @@ export function InstructorAbout() {
             <span className="gradient-text">Certified Hafiz & Tajweed Teacher</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Hafiz Raza brings over 10 years of Quran teaching experience — affordable, flexible,
+            Hafiz Raza brings 5 years of Quran teaching experience — affordable, flexible,
             and dedicated to helping every student learn at their own pace.
           </p>
         </motion.div>
@@ -90,7 +90,7 @@ export function InstructorAbout() {
                 {[1,2,3,4,5].map(s => <Star key={s} className="w-4 h-4 text-gold fill-gold" />)}
               </div>
               <span className="text-dark dark:text-white font-bold text-sm">5.0</span>
-              <span className="text-gray-500 dark:text-gray-400 text-xs">· 600+ students taught</span>
+              <span className="text-gray-500 dark:text-gray-400 text-xs">· 50+ students taught</span>
             </div>
 
             {/* Highlights */}

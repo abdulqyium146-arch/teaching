@@ -34,7 +34,7 @@ export const faqs: FAQ[] = [
   {
     id: '6',
     question: 'What qualifications do your teachers have?',
-    answer: 'Our lead instructor Hafiz Raza is a certified Hafiz ul Quran and Tajweed teacher with 10+ years of experience. We also have qualified male and female teachers — all are Hafiz-certified, Tajweed-trained, and DBS-checked. Both male and female teachers are available so every student can learn comfortably.',
+    answer: 'Our lead instructor Hafiz Raza is a certified Hafiz ul Quran and Tajweed teacher with 5 years of experience. We also have qualified male and female teachers — all are Hafiz-certified, Tajweed-trained, and DBS-checked. Both male and female teachers are available so every student can learn comfortably.',
     category: 'Teachers',
   },
   {

@@ -62,7 +62,7 @@ const hifzFaqs = [
 ]
 
 const features = [
-  { icon: BookOpen, title: 'Hafiz-Certified Teachers', desc: 'Every Hifz teacher at Quran Center UK is a certified Hafiz ul Quran with Tajweed training — led by Hafiz Raza, our head instructor with 10+ years of experience.' },
+  { icon: BookOpen, title: 'Hafiz-Certified Teachers', desc: 'Every Hifz teacher at Quran Center UK is a certified Hafiz ul Quran with Tajweed training — led by Hafiz Raza, our head instructor with 5 years of experience.' },
   { icon: Users, title: 'All Ages & Genders', desc: 'Dedicated programmes for children from age 7, adults, and sisters — with appropriate pacing, female teachers for ladies, and family discounts available.' },
   { icon: Clock, title: 'Flexible Scheduling', desc: 'Weekday, weekend, morning, evening and online slots. We work around your life — school hours, work commitments, and family routines.' },
   { icon: Star, title: 'Structured Revision System', desc: 'Our proven sabaq, sabqi, and manzil revision system ensures what is memorised stays memorised — permanently, not just temporarily.' },
