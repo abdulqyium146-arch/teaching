@@ -1,7 +1,6 @@
 'use client'
 
 import { useRef } from 'react'
-import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
 import { Star, Users, BadgeCheck, MessageCircle, Linkedin } from 'lucide-react'
 import { Teacher } from '@/types'
@@ -40,7 +39,7 @@ export function TeachersSection({ teachers }: TeachersSectionProps) {
           </p>
         </motion.div>
 
-        {/* Featured instructor — Dr. Omaima */}
+        {/* Featured instructor — Hafiz Raza */}
         {featured && (
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -56,15 +55,9 @@ export function TeachersSection({ teachers }: TeachersSectionProps) {
                   Head Instructor
                 </span>
 
-                {/* Real photo */}
-                <div className="relative w-36 h-36 rounded-full border-4 border-gold/60 overflow-hidden mb-4 shadow-lg">
-                  <Image
-                    src="/dr-omaima-habiba.webp"
-                    alt="Dr. Omaima Habiba — Ijazah-Certified Quran Instructor"
-                    fill
-                    className="object-cover object-top"
-                    sizes="144px"
-                  />
+                {/* Avatar */}
+                <div className="relative w-36 h-36 rounded-full border-4 border-gold/60 overflow-hidden mb-4 shadow-lg bg-gold/20 flex items-center justify-center">
+                  <span className="text-gold font-heading font-bold text-4xl">HR</span>
                 </div>
 
                 <h3 className="font-heading font-bold text-white text-xl mb-1 text-center">
@@ -127,14 +120,14 @@ export function TeachersSection({ teachers }: TeachersSectionProps) {
                   Why learn with her?
                 </p>
                 <h4 className="font-heading text-white text-2xl font-bold mb-2">
-                  The Rarest Credential in UK Quran Teaching
+                  Certified, Experienced & Affordable Quran Teaching
                 </h4>
                 <p className="text-white/70 text-sm leading-relaxed mb-6">
-                  An <strong className="text-gold">Ijazah – Hafs ʿan Asim</strong> is an unbroken chain of
-                  certified Quran transmission going back to the Prophet Muhammad ﷺ himself. Only a
-                  handful of scholars in the UK hold this honour. Combined with her doctorate and
-                  specialisation in teaching Arabic to non-native speakers, Dr. Omaima brings
-                  academic rigour and authentic Islamic tradition together in every lesson.
+                  Hafiz Raza has memorised the complete Quran and is a certified Tajweed teacher
+                  with over <strong className="text-gold">10 years of teaching experience</strong>.
+                  He specialises in Quran for kids, Hifz programmes, and Tajweed correction —
+                  patient, structured, and tailored to each student. Both male and female teachers
+                  are available. Affordable fees for all courses.
                 </p>
 
                 {featured.credentials && (

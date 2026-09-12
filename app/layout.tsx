@@ -58,22 +58,22 @@ export const metadata: Metadata = {
     siteName: 'Quran Center UK',
     title: 'Quran Center UK | Premium Quran Classes Manchester & Online',
     description:
-      'Learn Quran with Dr. Omaima Habiba — Ijazah-certified instructor. Tajweed, Hifz, Noorani Qaida, Islamic Studies for all ages.',
+      'Learn Quran with Hafiz Raza — certified Hafiz ul Quran & Tajweed teacher. Affordable prices. Male & female teachers. Tajweed, Hifz, Noorani Qaida for all ages.',
     images: [
       {
-        url: `${BUSINESS_INFO.website}/quran-center-uk-hero.webp`,
-        width: 1200,
-        height: 630,
-        alt: 'Quran Center UK — Learn Quran with an Ijazah-Certified Dr. in Manchester & Online',
+        url: `${BUSINESS_INFO.website}/logo.webp`,
+        width: 512,
+        height: 512,
+        alt: 'Quran Center UK — Affordable Quran Classes Manchester & Online UK',
         type: 'image/webp',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Quran Center UK | Ijazah-Certified Quran Classes Manchester & Online',
-    description: 'Learn Quran with Dr. Omaima Habiba — Ijazah-certified, Assistant Professor. Book your FREE trial.',
-    images: [`${BUSINESS_INFO.website}/quran-center-uk-hero.webp`],
+    title: 'Quran Center UK | Affordable Quran Classes Manchester & Online',
+    description: 'Learn Quran with Hafiz Raza — certified Hafiz & Tajweed teacher. Affordable prices. Male & female teachers. Book your FREE trial.',
+    images: [`${BUSINESS_INFO.website}/logo.webp`],
     creator: '@qurancenteruk',
   },
   robots: {

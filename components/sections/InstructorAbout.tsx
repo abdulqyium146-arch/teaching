@@ -1,36 +1,30 @@
 'use client'
 
 import { useRef } from 'react'
-import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
-import { BadgeCheck, MessageCircle, Linkedin, GraduationCap, Globe, BookOpen } from 'lucide-react'
+import { BadgeCheck, MessageCircle, BookOpen, Users, Clock, Star } from 'lucide-react'
 import { BUSINESS_INFO } from '@/lib/utils'
 
 const expertise = [
-  'Curriculum Development',
-  'Curriculum Design',
-  'Higher Education Teaching',
-  'Teacher Education & Professional Development',
-  'Educational Leadership',
-  'Arabic Language Teaching',
-  'Teaching Arabic as a Foreign Language (TAFL)',
+  'Quran Recitation (Nazra)',
+  'Tajweed Rules & Correction',
+  'Hifz ul Quran (Memorisation)',
+  'Noorani Qaida (Beginners)',
+  'Quran for Kids',
+  'Quran for Adults',
   'Islamic Studies',
-  'Quran & Tajweed',
-  'Educational Research',
-  'Instructional Design',
-  'Assessment & Quality Assurance',
-  'Online & Blended Learning',
-  'Educational Consulting',
-  'Classroom Management',
-  'Adult Education',
-  'EAL Support',
+  'One-to-One Classes',
+  'Online Quran Teaching',
+  'Flexible Scheduling',
+  'Affordable Pricing',
+  'Beginner to Advanced',
 ]
 
 const highlights = [
-  { icon: GraduationCap, label: 'PhD — Curriculum & Instruction (TAFL)', color: 'text-gold' },
-  { icon: BadgeCheck, label: 'Ijazah – Hafs ʿan Asim (Chain to Prophet ﷺ)', color: 'text-green-400' },
-  { icon: Globe, label: '20+ Years International Higher Education', color: 'text-blue-400' },
-  { icon: BookOpen, label: 'Arabic for Non-Native Speakers Specialist', color: 'text-purple-400' },
+  { icon: BookOpen, label: 'Hafiz ul Quran — Full Quran Memorised', color: 'text-gold' },
+  { icon: BadgeCheck, label: 'Tajweed Certified Teacher', color: 'text-green-400' },
+  { icon: Users, label: 'Male & Female Teachers Available', color: 'text-blue-400' },
+  { icon: Clock, label: '10+ Years Teaching Experience', color: 'text-purple-400' },
 ]
 
 export function InstructorAbout() {
@@ -42,7 +36,7 @@ export function InstructorAbout() {
       className="section-padding bg-white dark:bg-dark"
       ref={ref}
       id="about-instructor"
-      aria-label="About Dr. Omaima Habiba"
+      aria-label="About Hafiz Raza"
     >
       <div className="container-custom">
         {/* Section label */}
@@ -57,42 +51,46 @@ export function InstructorAbout() {
           </span>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-dark dark:text-white mb-4">
             Learn from a{' '}
-            <span className="gradient-text">Verified Ijazah Holder & PhD</span>
+            <span className="gradient-text">Certified Hafiz & Tajweed Teacher</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            With over 20 years of international experience, Dr. Omaima Habiba brings academic
-            excellence and authentic Islamic scholarship to every student.
+            Hafiz Raza brings over 10 years of Quran teaching experience — affordable, flexible,
+            and dedicated to helping every student learn at their own pace.
           </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-5 gap-10 xl:gap-16 items-start">
 
-          {/* LEFT — Photo + quick stats (2 cols) */}
+          {/* LEFT — Avatar + highlights */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
             className="lg:col-span-2 flex flex-col items-center lg:items-start gap-6"
           >
-            {/* Photo card */}
+            {/* Avatar card */}
             <div className="relative w-full max-w-xs">
               <div className="absolute -inset-1 bg-gold-gradient rounded-3xl blur opacity-20" />
               <div className="relative rounded-3xl overflow-hidden border-2 border-gold/30">
-                <div className="relative h-80 w-full">
-                  <Image
-                    src="/dr-omaima-habiba.webp"
-                    alt="Dr. Omaima Habiba — PhD, Ijazah-Certified Quran Instructor, Assistant Professor, Manchester"
-                    fill
-                    className="object-cover object-top"
-                    sizes="(max-width: 768px) 320px, 280px"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-dark/80 to-transparent" />
-                  <div className="absolute bottom-3 left-3 right-3">
-                    <p className="text-white font-heading font-bold text-lg leading-tight">Dr. Omaima Habiba</p>
-                    <p className="text-gold text-xs font-medium">PhD · Assistant Professor · Ijazah Holder</p>
+                <div className="h-64 w-full bg-gradient-to-br from-primary-900 to-dark flex flex-col items-center justify-center gap-4">
+                  <div className="w-28 h-28 rounded-full bg-gold/20 border-4 border-gold/50 flex items-center justify-center shadow-xl">
+                    <span className="text-gold font-heading font-bold text-5xl">HR</span>
+                  </div>
+                  <div className="text-center px-4">
+                    <p className="text-white font-heading font-bold text-xl">Hafiz Raza</p>
+                    <p className="text-gold text-xs font-medium mt-1">Hafiz ul Quran · Tajweed Specialist</p>
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* Rating strip */}
+            <div className="flex items-center gap-2 w-full max-w-xs px-4 py-3 bg-gray-50 dark:bg-white/5 rounded-xl border border-gray-100 dark:border-white/10">
+              <div className="flex">
+                {[1,2,3,4,5].map(s => <Star key={s} className="w-4 h-4 text-gold fill-gold" />)}
+              </div>
+              <span className="text-dark dark:text-white font-bold text-sm">5.0</span>
+              <span className="text-gray-500 dark:text-gray-400 text-xs">· 600+ students taught</span>
             </div>
 
             {/* Highlights */}
@@ -108,7 +106,7 @@ export function InstructorAbout() {
             {/* CTA buttons */}
             <div className="flex gap-3 w-full max-w-xs">
               <a
-                href={`https://wa.me/${BUSINESS_INFO.whatsapp}?text=Assalamu%20Alaykum%20Dr.%20Omaima%2C%20I%20would%20like%20to%20book%20a%20FREE%20trial%20class.`}
+                href={`https://wa.me/${BUSINESS_INFO.whatsapp}?text=Assalamu%20Alaykum%2C%20I%20would%20like%20to%20book%20a%20FREE%20trial%20class%20with%20Hafiz%20Raza.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20b858] text-white px-4 py-3 rounded-xl font-semibold text-sm transition-all hover:scale-105 shadow-md"
@@ -117,56 +115,48 @@ export function InstructorAbout() {
                 Book Trial
               </a>
               <a
-                href={BUSINESS_INFO.social.linkedin}
+                href={`https://wa.me/${BUSINESS_INFO.whatsapp}?text=Assalamu%20Alaykum%2C%20please%20share%20your%20course%20fees%20and%20schedule.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 bg-[#0A66C2] hover:bg-[#0958a8] text-white px-4 py-3 rounded-xl font-semibold text-sm transition-all hover:scale-105 shadow-md"
+                className="flex-1 flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-4 py-3 rounded-xl font-semibold text-sm transition-all hover:scale-105 shadow-md"
               >
-                <Linkedin className="w-4 h-4" />
-                LinkedIn
+                Ask Fees
               </a>
             </div>
 
-            {/* Location pill */}
             <p className="text-xs text-gray-400 dark:text-gray-500 text-center lg:text-left">
-              📍 Manchester, England, United Kingdom · Full right to work in UK
+              📍 Manchester, UK · Online UK-wide · WhatsApp 24/7
             </p>
           </motion.div>
 
-          {/* RIGHT — Bio + expertise (3 cols) */}
+          {/* RIGHT — Bio + expertise */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.15 }}
             className="lg:col-span-3"
           >
-            {/* Bio */}
             <div className="prose prose-gray dark:prose-invert max-w-none mb-8">
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                Dr. Omaima Habiba is an experienced Educational Leader, Assistant Professor, Curriculum
-                Development Specialist, and Teacher Trainer with over <strong>20 years of international
-                experience</strong> in higher education, Arabic language education, Islamic Studies,
-                curriculum development, and teacher professional development.
+                Hafiz Raza is a certified <strong>Hafiz ul Quran</strong> — he has memorised the complete
+                Holy Quran — and a qualified Tajweed teacher with over <strong>10 years of experience</strong>
+                teaching students of all ages and backgrounds online and in Manchester.
               </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                She holds a <strong>PhD in Curriculum and Instruction</strong> with a specialisation in
-                Teaching Arabic to Speakers of Other Languages (TAFL). Throughout her academic career,
-                she has taught undergraduate and postgraduate students, supervised research, designed
-                university curricula, developed educational programmes, and delivered professional
-                development for teachers across schools, universities, and educational organisations.
+                He specialises in teaching children from a very young age through Noorani Qaida and Quran
+                reading, as well as guiding adults who are starting from scratch. His teaching approach
+                is <strong>patient, structured, and personalised</strong> — he adapts to each student's
+                pace rather than rushing through material.
               </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                She has extensive experience teaching children, adults, university students, and
-                non-native Arabic speakers using <strong>learner-centred, interactive, and
-                research-informed</strong> teaching approaches. Her Ijazah in Hafs ʿan Asim represents
-                an unbroken chain of Quranic transmission going back to the Prophet Muhammad ﷺ — one of
-                the rarest and most respected credentials in Islamic education.
+                The centre also has qualified <strong>female teachers</strong> available for sisters and
+                female students who prefer a same-gender learning environment — ensuring everyone can
+                learn in a comfortable, Islamic setting.
               </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                Dr. Omaima is passionate about improving educational quality, empowering teachers,
-                supporting student success, and developing innovative curricula that meet international
-                academic standards. She works in multicultural environments and collaborates with
-                educational institutions to enhance teaching excellence and learner achievement.
+                All courses are offered at <strong>affordable prices</strong> with flexible scheduling —
+                morning, afternoon, and evening slots available 7 days a week. The first trial class is
+                completely free with no commitment required.
               </p>
             </div>
 
@@ -174,7 +164,7 @@ export function InstructorAbout() {
             <div>
               <h3 className="font-heading font-bold text-dark dark:text-white text-lg mb-4 flex items-center gap-2">
                 <span className="w-6 h-0.5 bg-primary-600 inline-block" />
-                Areas of Expertise
+                What We Teach
               </h3>
               <div className="flex flex-wrap gap-2">
                 {expertise.map((item) => (
@@ -189,23 +179,23 @@ export function InstructorAbout() {
               </div>
             </div>
 
-            {/* Seeking roles note */}
+            {/* Affordable pricing note */}
             <div className="mt-8 p-5 bg-primary-50 dark:bg-primary-900/20 border border-primary-100 dark:border-primary-800 rounded-2xl">
               <p className="text-primary-800 dark:text-primary-300 text-sm font-semibold mb-2">
-                Currently based in Manchester, UK — Seeking collaboration with:
+                Affordable prices — contact us for a quote:
               </p>
               <p className="text-primary-700 dark:text-primary-400 text-sm leading-relaxed">
-                Universities · Colleges · Schools · Islamic educational institutions · Training providers
-                — across the UK and internationally.
+                Fees vary by course and number of sessions per week. We offer special rates for families
+                enrolling multiple children. Message us on WhatsApp for a personalised, no-obligation quote.
               </p>
               <a
-                href={`https://wa.me/${BUSINESS_INFO.whatsapp}?text=Assalamu%20Alaykum%20Dr.%20Omaima%2C%20I%20would%20like%20to%20enquire%20about%20collaboration%20or%20enrolment.`}
+                href={`https://wa.me/${BUSINESS_INFO.whatsapp}?text=Assalamu%20Alaykum%2C%20I%20would%20like%20to%20know%20the%20fees%20for%20Quran%20classes.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 mt-3 bg-primary-600 hover:bg-primary-700 text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-all hover:scale-105"
+                className="inline-flex items-center gap-2 mt-3 bg-[#25D366] hover:bg-[#20b858] text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-all hover:scale-105"
               >
                 <MessageCircle className="w-4 h-4" />
-                Enquire on WhatsApp
+                Ask About Fees on WhatsApp
               </a>
             </div>
           </motion.div>

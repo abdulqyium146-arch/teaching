@@ -7,9 +7,9 @@ import { Shield, Clock, Users, Globe, Award, Heart } from 'lucide-react'
 const features = [
   {
     icon: Award,
-    title: 'Ijazah-Certified Head Instructor',
+    title: 'Certified & Experienced Head Instructor',
     description:
-      'Led by Dr. Omaima Habiba — Assistant Professor, Ijazah holder (Hafs ʿan Asim), and specialist in teaching Arabic to non-native speakers. An unbroken chain back to the Prophet ﷺ.',
+      'Led by Hafiz Raza — a certified Hafiz ul Quran and Tajweed specialist with 10+ years of teaching experience. Dedicated to helping students of all ages learn correctly.',
     color: 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400',
   },
   {
@@ -42,9 +42,9 @@ const features = [
   },
   {
     icon: Heart,
-    title: 'Personalised Attention',
+    title: 'Affordable Prices',
     description:
-      'Small class sizes and one-to-one options ensure every student receives personalised feedback and progresses at their own pace.',
+      'Quality Quran education should be accessible to everyone. We offer competitive, affordable fees with flexible payment options — contact us for a personalised quote.',
     color: 'bg-rose-50 dark:bg-rose-900/20 text-rose-600 dark:text-rose-400',
   },
 ]

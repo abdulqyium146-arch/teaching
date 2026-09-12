@@ -2,22 +2,21 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import Image from 'next/image'
 import { ArrowRight, Star, CheckCircle2, Phone, MessageCircle, Linkedin, BadgeCheck, CalendarCheck } from 'lucide-react'
 import { BUSINESS_INFO, FREE_TRIAL_WHATSAPP } from '@/lib/utils'
 
 const trustBadges = [
   '1,200+ Students',
-  'Ijazah-Certified Instructor',
-  'Dr.-Level Teaching',
+  'Hafiz ul Quran Certified',
+  'Affordable Prices',
   'Male & Female Teachers',
 ]
 
 const credentials = [
-  'Ijazah – Hafs ʿan Asim',
-  'Assistant Professor',
-  'Arabic for Non-Native Speakers',
-  'Teacher Trainer',
+  'Hafiz ul Quran (Full Memorisation)',
+  'Tajweed Certified Teacher',
+  'Hifz Programme Supervisor',
+  'Male & Female Teachers Available',
 ]
 
 const fadeUp = {
@@ -83,7 +82,7 @@ export function Hero() {
                 Holy Quran
               </span>
               <br />
-              with an Ijazah‑Certified Dr.
+              with Certified & Affordable Teachers
             </motion.h1>
 
             {/* Hadith quote */}
@@ -117,7 +116,7 @@ export function Hero() {
               className="text-white/75 text-lg leading-relaxed mb-8"
             >
               Join over <strong className="text-white">1,200+ students</strong> learning Quran, Tajweed, Hifz &amp; Islamic
-              Studies online and in Manchester — taught by a verified Ijazah holder.
+              Studies online and in Manchester — affordable prices, male &amp; female teachers available.
             </motion.p>
 
             {/* ── PRIMARY WhatsApp CTA ── */}
@@ -193,22 +192,22 @@ export function Hero() {
               <div className="absolute -inset-1 bg-gold-gradient rounded-3xl blur opacity-30" />
 
               <div className="relative bg-white/10 backdrop-blur-md border border-gold/30 rounded-3xl overflow-hidden">
-                {/* Photo */}
-                <div className="relative h-72 sm:h-80 w-full bg-gradient-to-b from-primary-900/50 to-dark/80">
-                  <Image
-                    src="/dr-omaima-habiba.webp"
-                    alt="Dr. Omaima Habiba — Ijazah-Certified Quran Instructor, Assistant Professor, Manchester"
-                    fill
-                    className="object-cover object-top"
-                    sizes="(max-width: 768px) 100vw, 380px"
-                    priority
-                  />
+                {/* Avatar */}
+                <div className="relative h-72 sm:h-80 w-full bg-gradient-to-b from-primary-900/50 to-dark/80 flex items-center justify-center">
+                  <div className="flex flex-col items-center gap-3">
+                    <div className="w-28 h-28 rounded-full bg-gold/20 border-4 border-gold/60 flex items-center justify-center shadow-lg">
+                      <span className="text-gold font-heading font-bold text-4xl">HR</span>
+                    </div>
+                    <div className="text-center px-4">
+                      <p className="text-white/60 text-xs">Head Instructor</p>
+                    </div>
+                  </div>
                   {/* Gold overlay at bottom */}
                   <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-dark/90 to-transparent" />
 
-                  {/* Ijazah badge — top right */}
+                  {/* Badge — top right */}
                   <div className="absolute top-3 right-3 bg-gold text-dark text-xs font-bold px-3 py-1 rounded-full">
-                    Ijazah Certified ✓
+                    Hafiz ul Quran ✓
                   </div>
                 </div>
 
@@ -217,10 +216,10 @@ export function Hero() {
                   <div className="flex items-start justify-between mb-3">
                     <div>
                       <h2 className="font-heading font-bold text-white text-lg leading-tight">
-                        Dr. Omaima Habiba
+                        Hafiz Raza
                       </h2>
                       <p className="text-gold text-xs font-semibold mt-0.5">
-                        Assistant Professor · Arabic Language Specialist
+                        Head Instructor · Hafiz ul Quran · Tajweed Specialist
                       </p>
                     </div>
                     <div className="flex items-center gap-1 bg-white/10 px-2 py-1 rounded-lg shrink-0">

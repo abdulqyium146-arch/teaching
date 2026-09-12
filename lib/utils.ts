@@ -23,11 +23,11 @@ export function slugify(text: string): string {
 
 export const BUSINESS_INFO = {
   name: 'Quran Center UK',
-  tagline: 'Learn Quran with an Ijazah-Certified Dr. — Manchester & Online UK',
+  tagline: 'Learn Quran with Certified Teachers — Affordable Classes Manchester & Online UK',
   description:
-    'Quran Center UK is led by Dr. Omaima Habiba — an Ijazah-certified instructor (Hafs ʿan Asim), Assistant Professor, and Arabic Language Education Specialist. We offer expert Quran tuition, Tajweed, Hifz, and Islamic Studies for children and adults, online across the UK and in-person in Manchester since 2014.',
+    'Quran Center UK is led by Hafiz Raza — a certified Quran teacher and Hafiz ul Quran with years of teaching experience. We offer expert Quran tuition, Tajweed, Hifz, and Islamic Studies for children and adults at affordable prices, online across the UK and in-person in Manchester since 2014. Both male and female teachers available.',
   shortDescription:
-    'Learn Quran with Dr. Omaima Habiba — Ijazah-certified, Assistant Professor, and specialist in teaching Arabic to non-native speakers. Book your FREE trial today.',
+    'Learn Quran with Hafiz Raza — certified Hafiz, Tajweed specialist, and experienced Quran teacher. Affordable prices. Male & female teachers. Book your FREE trial today.',
   address: {
     street: '41 Hemmons Rd',
     area: 'Levenshulme',

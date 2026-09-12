@@ -5,7 +5,7 @@ import { BUSINESS_INFO } from '@/lib/utils'
 export const metadata: Metadata = {
   title: 'Book a FREE Trial Class | Quran Center UK',
   description:
-    'Book your FREE trial Quran class with Dr. Omaima Habiba — Ijazah-certified instructor. Tajweed, Hifz, Arabic & Islamic Studies. Online & Manchester.',
+    'Book your FREE trial Quran class with Hafiz Raza — certified Hafiz & Tajweed teacher. Affordable prices. Male & female teachers. Online & Manchester.',
   alternates: { canonical: `${BUSINESS_INFO.website}/book` },
 }
 
